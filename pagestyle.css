@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Gotham-Book;
+    src: url('fonts/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('fonts/Gotham-Medium.otf');
+}
+
+
+
+
+body {
+  margin:0px;
+  height:100%;
+  padding:0;
+}
+
+canvas {
+  left:0px;
+  position:absolute;
+  top:0px;
+  z-index:998;
+}
+
+
+svg {
+  left:0px;
+  position:absolute;
+  top:0px;
+  z-index: 998;
+}
+
+div {
+  height:0px;
+  margin:0px;
+  position:relative;
+  width:0px;
+  left:0px;
+  top:0px;
+  z-index: 998;
+}
+
+div.MainDiv {
+  left:50%;
+  top:50%;
+  display:none;
+}
+
+div.ColorBackground {
+  height:100%;
+  position:absolute;
+  width:100%;
+  z-index: 200;
+}
+
+div.TextDiv1 {
+  position:absolute;
+  overflow: hidden;
+}
+
+div.TextDiv2 {
+  position:absolute;
+  overflow: hidden;
+  display:none;
+}
+
+div.ImageClip {
+  position:absolute;
+  overflow: hidden;
+  height:100%;
+  width:100%;
+  z-index: 1;
+}
+
+div.LowerTextDiv {
+  height: 2.5%;
+  width: 100%;
+  position:absolute;
+  top:97%;
+}
+
+div.LoadingDiv {
+  height:100%;
+  position:absolute;
+  width:100%;
+}
+
+div.ParticleBackground {
+  opacity:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:500;
+  overflow: hidden;
+  display:block;
+}
+
+html {
+  margin:0px;
+  height:100%;
+}
+
+img {
+  height:0px;
+  width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  pointer-events: none;
+}
+
+img.BackgroundImage {
+  left:50%;
+  top:50%;
+  height:0px;
+  width:0px;
+}
+
+img.LogoDiv {
+  background-color:#FFFFFF;
+  z-index: 999;
+}
+
+p {
+  display: block;
+  font-size:0px;
+  margin:0px;
+  position:absolute;
+  top:10%;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 998;
+  pointer-events: none;
+}
+
+p.ArtistName {
+  color:#FFFFFF;
+  font-family: 'Gotham-Medium', 'Raleway', Lato, sans-serif;
+  line-height: 112%;
+  font-weight: 700;
+  height:50%;
+  letter-spacing: -5.3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p.SongName {
+  color:#FFFFFF;
+  font-family: 'Gotham-Book', 'Raleway', Lato, sans-serif;
+  font-weight: 400;
+  height:30%;
+  letter-spacing: -4px;
+  line-height: 87%;
+  position:absolute;
+  top:60%;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p.AlbumTitle {
+  color:#FFFFFF;
+  font-family: 'Gotham-Medium', 'Raleway', Lato, sans-serif;
+  line-height: 112%;
+  font-weight: 700;
+  height:20%;
+  letter-spacing: -5.3px;
+  text-transform: uppercase;
+  top:10%;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+p.AlbumSongTitle1 {
+  color:#FFFFFF;
+  font-family: 'Gotham-Book', 'Raleway', Lato, sans-serif;
+  font-weight: 400;
+  height:20%;
+  letter-spacing: -4px;
+  line-height: 87%;
+  text-transform: uppercase;
+  top:32%;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+p.AlbumSongTitle2 {
+  color:#FFFFFF;
+  font-family: 'Gotham-Book', 'Raleway', Lato, sans-serif;
+  font-weight: 400;
+  height:20%;
+  letter-spacing: -4px;
+  line-height: 87%;
+  text-transform: uppercase;
+  top:54%;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+p.AlbumSongTitle3 {
+  color:#FFFFFF;
+  font-family: 'Gotham-Book', 'Raleway', Lato, sans-serif;
+  font-weight: 400;
+  height:20%;
+  letter-spacing: -4px;
+  line-height: 87%;
+  text-transform: uppercase;
+  top:76%;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+p.SkipText {
+  color:#FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+  top:-370%;
+  width: 100%;
+}
+
+p.LeftText {
+  color:#FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 300%;
+  top:-250%;
+  width: 100%;
+}
+
+p.RightText {
+  color:#FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 200%;
+  text-align:right;
+  top:-150%;
+  width: 100%;
+}
+
+p.LoadingText {
+  color:#FFFFFF;
+  font-family: sans-serif;
+  height:3%;
+  text-align: center;
+  top:2%;
+  font-size:0px;
+}
+
+a {
+  color:#FFFFFF;
+  text-decoration: none;
+  pointer-events: all;
+}
