@@ -1,4 +1,4 @@
-//Modified from https://github.com/caseif/vis.js/blob/gh-pages/js/analysis/spectrum_algorithms.js
+//Heavily modified from https://github.com/caseif/vis.js/blob/gh-pages/js/analysis/spectrum_algorithms.js
 
 
 var barWidth = (SpectrumBarCount + Bar1080pSeperation) / SpectrumBarCount - Bar1080pSeperation;
@@ -10,6 +10,7 @@ var marginDecay = 1.6
 var spectrumMaxExponent = 5
 var spectrumMinExponent = 3;
 var spectrumExponentScale = 2;
+var MaxRandomExtent = 1.6
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -54,7 +55,7 @@ function AverageTransform(Array) {
             var SecondValue = Array[i]
             var ThirdValue = Array[i + 1]
             if (SecondValue >= FirstValue && SecondValue >= ThirdValue) {
-              Value = SecondValue
+              Value = (FirstValue + SecondValue + ThirdValue) / 2;
             } else {
               Value = (FirstValue + SecondValue + ThirdValue) / 3;
             }
