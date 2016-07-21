@@ -10,7 +10,6 @@ var marginDecay = 1.6
 var spectrumMaxExponent = 5
 var spectrumMinExponent = 3;
 var spectrumExponentScale = 2;
-var MaxRandomExtent = 1.6
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -25,7 +24,6 @@ function SpectrumEase(Value) {
 }
 
 function TransformToVisualBins(Array) {
-
   var NewArray = []
   var SamplePoints = []
   for (var i = 0; i < SpectrumBarCount; i++) {
@@ -36,28 +34,29 @@ function TransformToVisualBins(Array) {
   }
   UpdateParticleAttributes(NewArray)
 
-  NewArray = tailTransform(NewArray);
   NewArray = exponentialTransform(NewArray);
+  NewArray = tailTransform(NewArray);
   NewArray = AverageTransform(NewArray);
   return NewArray;
 }
 
 function AverageTransform(Array) {
     var Values = []
-    for (var i = 0; i < SpectrumBarCount; i++) {
+    var Length = Array.length
+    for (var i = 0; i < Length; i++) {
         var Value = 0
         if (i == 0) {
             Value = Array[i];
-        } else if (i == SpectrumBarCount - 1) {
-            Value = (Array[i - 1] + Array[i]) / 2;
+        } else if (i == Length - 1) {
+            Value = (Array[i - 1] + Array[i]) / 2
         } else {
             var FirstValue = Array[i - 1]
             var SecondValue = Array[i]
             var ThirdValue = Array[i + 1]
             if (SecondValue >= FirstValue && SecondValue >= ThirdValue) {
-              Value = (FirstValue + SecondValue + ThirdValue) / 2;
+              Value = (FirstValue + SecondValue + ThirdValue) / 2.4;
             } else {
-              Value = (FirstValue + SecondValue + ThirdValue) / 3;
+              Value = (FirstValue + SecondValue + ThirdValue) / 3
             }
         }
         Value = Math.min(Value + 1, spectrumHeight);
