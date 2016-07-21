@@ -1,5 +1,5 @@
 # Monstercat-Audio-Spectrum-Visualizer
-NOTE: analysis.js may be modified within the next few days as the random spikes are very high. Check back later.
+NOTE: analysis.js is not really in the state I would like it to be. Let me know (pull request) if you have a better version.
 Also: More songs will be added, just need to get them
 
 Viewing: 
