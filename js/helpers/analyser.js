@@ -10,6 +10,8 @@ var marginDecay = 1.6
 var spectrumMaxExponent = 5
 var spectrumMinExponent = 3;
 var spectrumExponentScale = 2;
+var SideWeight = 2
+var CenterWeight = 3
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -50,14 +52,16 @@ function AverageTransform(Array) {
         } else if (i == Length - 1) {
             Value = (Array[i - 1] + Array[i]) / 2
         } else {
-            var FirstValue = Array[i - 1]
-            var SecondValue = Array[i]
-            var ThirdValue = Array[i + 1]
-            if (SecondValue >= FirstValue && SecondValue >= ThirdValue) {
-              Value = (FirstValue + SecondValue + ThirdValue) / 2.4;
-            } else {
-              Value = (FirstValue + SecondValue + ThirdValue) / 3
-            }
+            var PrevValue = Array[i - 1]
+            var CurValue = Array[i]
+            var NextValue = Array[i + 1]
+            //if (CurValue >= PrevValue && CurValue >= NextValue) {
+            //  Value = (PrevValue + CurValue + NextValue) / 2.4;
+            //} else {
+            //  Value = (PrevValue + CurValue + NextValue) / 3
+            //}
+            //Code above was replaced by weighted averaging. Appears to work better.
+            Value = (((PrevValue + NextValue)/2)*SideWeight + (CurValue*CenterWeight))/(SideWeight + CenterWeight)
         }
         Value = Math.min(Value + 1, spectrumHeight);
 
