@@ -16,7 +16,7 @@ If you don't want to download it to your computer and just use it as a fork, her
 
 ## Re-purposing (Download)
 This is a bit more painful, but it has the main benefit of it doesn't rely on GitHub, RawGit, and your internet connection.
-1. Download a ZIP of the respositionary and move it to where you want to store it in your computer.
+1. Download a ZIP of the repository and move it to where you want to store it in your computer.
 2. Create a shortcut as follows "C:<i>directorytochrome.exe</i> --allow-file-access-from-files file:///C:<i>directorytoindex.html</i>" (This is for Windows)
 3. Repeat if on a different computer, as location of chrome.exe can vary from installation date and OS
 
