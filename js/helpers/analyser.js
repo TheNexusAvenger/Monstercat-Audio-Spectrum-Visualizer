@@ -7,8 +7,8 @@ var headMargin = 7;
 var tailMargin = 0;
 var minMarginWeight = 0.6
 var marginDecay = 1.6
-var spectrumMaxExponent = 5
-var spectrumMinExponent = 3;
+var spectrumMaxExponent = 4
+var spectrumMinExponent = 3
 var spectrumExponentScale = 2;
 var SideWeight = 2
 var CenterWeight = 3
@@ -64,7 +64,7 @@ function AverageTransform(Array) {
             //Code above was replaced by weighted averaging. Appears to work better.
             Value = (((PrevValue + NextValue)/2)*SideWeight + (CurValue*CenterWeight))/(SideWeight + CenterWeight)
         }
-        Value = Math.min(Value + 1, spectrumHeight) * MaxSizeAdjuster;
+        Value = Math.min(Value + 1, spectrumHeight) * MaxSizeAdjuster
 
         Values[i] = Value;
     }
