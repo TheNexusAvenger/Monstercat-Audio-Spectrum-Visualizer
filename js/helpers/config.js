@@ -1,5 +1,6 @@
 var UseSVGOverCanvas = false //Recommended to be false (performance and compatibility). Professor had me experiment with it.
 
+var EncodingEnabled = false //If true, encoding will be an option. Text will be hidden and data won't be recorded if false
 var RecordFrequency = 30 //How many times per second data should try to record at. 30 is recommended.
 var RecordDownScale = 100 //How far down the recording should scale down numbers (0-this instead of 0-255). You can increase this past 255 for more accuracy.
 var IndluceRecordMetadata = true //If true, metadata such as the RecordFrequency and RecordDownScale are included in the file downloaded.
