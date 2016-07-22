@@ -19,6 +19,7 @@ function GetCookie(cname) {
 }
 
 var Paused = false
+var Stopped = false
 var Volume = StartVolume
 var PausedAt = 0
 var CurrentTimeOffset = 0
@@ -46,7 +47,11 @@ function UpdateTextVisibility() {
 }
 
 function UpdateText() {
-  LeftText.innerHTML = "&nbsp;Press O to Skip and P to Pause<br>&nbsp;Export Data (E): " + BoolToText(DownloadSongData) + "<br>&nbsp;Volume (Arrow Keys): " + Volume + "%"
+  if (EncodingEnabled == true) {
+    LeftText.innerHTML = "&nbsp;Press O to Skip and P to Pause<br>&nbsp;Export Data (E): " + BoolToText(DownloadSongData) + "<br>&nbsp;Volume (Arrow Keys): " + Volume + "%"
+  } else {
+    LeftText.innerHTML = "<br>&nbsp;Press O to Skip and P to Pause<br>&nbsp;Volume (Arrow Keys): " + Volume + "%"
+  }
   UpdateTextVisibility()
 }
 
@@ -73,8 +78,10 @@ Body.addEventListener("keydown", function(Key) {
       }
       UpdateText()
     } else if (KeyCode == "KeyE") {
-      DownloadSongData = !DownloadSongData
-      UpdateText()
+      if (EncodingEnabled == true) {
+        DownloadSongData = !DownloadSongData
+        UpdateText()
+      }
     } else if (KeyCode == "ArrowUp") {
       Volume = Volume + 5
       if (Volume > 100) {
@@ -90,7 +97,8 @@ Body.addEventListener("keydown", function(Key) {
       UpdateVolume()
       UpdateText()
     } else if (KeyCode == "KeyO") {
-      if (Source) {
+      if (Stopped != true) {
+        Stopped = true
         AlbumImage.style.width = "0px"
         AlbumImage.style.left = "0px"
         MonstercatLogo.style.width = "0px"
@@ -100,7 +108,12 @@ Body.addEventListener("keydown", function(Key) {
 
         ParticleBackground.style.opacity = 0
         TimeLength = 0
-        Source.stop()
+        if (Source) {
+          Source.stop()
+          ForceStop()
+        } else {
+          ForceStop()
+        }
       }
     }
   }
