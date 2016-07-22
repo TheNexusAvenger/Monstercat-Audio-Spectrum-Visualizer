@@ -258,14 +258,16 @@ function HandleAudio() {
   var NewSeperation = Bar1080pSeperation * Mult
   var NewBarWidth = Bar1080pWidth * Mult
 
-  if (Frame != -1 && LastFrame != Frame) {
-    LastFrame = Frame
-    CompiledSongData = CompiledSongData + "\n[" + Frame + "] = {"
-    for (var i = 0; i < SpectrumBarCount; i++) {
-      var Height = TransformedVisualData[i]/255
-      CompiledSongData = CompiledSongData + Math.floor(Height*RecordDownScale) + ","
+  if (EncodingEnabled == true) {
+    if (Frame != -1 && LastFrame != Frame) {
+      LastFrame = Frame
+      CompiledSongData = CompiledSongData + "\n[" + Frame + "] = {"
+      for (var i = 0; i < SpectrumBarCount; i++) {
+        var Height = TransformedVisualData[i]/255
+        CompiledSongData = CompiledSongData + Math.floor(Height*RecordDownScale) + ","
+      }
+      CompiledSongData = CompiledSongData + "},"
     }
-    CompiledSongData = CompiledSongData + "},"
   }
 
   CanvasColor.shadowOffsetX = ShowBlurSize/2;
