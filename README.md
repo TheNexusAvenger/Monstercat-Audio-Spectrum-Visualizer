@@ -9,14 +9,14 @@ This is a complete redo of the modified version of [vis.j](https://github.com/Th
 
 ## Re-purposing (GitHub Fork)
 If you don't want to download it to your computer and just use it as a fork, here are the steps needed:
-1. Press the fork button in this repositionary to create a copy.
-2. In README.md, change the two TheNexusAvenger links (lines 6 and 7, but not 9) to your GitHub username.
+1. Press the fork button in this repositionary to create a copy.<br>
+2. In README.md, change the two TheNexusAvenger links (lines 6 and 7, but not 9) to your GitHub username.<br>
 (Optinal) 3. In index.html, change the one TheNexusAvenger link (line 39) to your GitHub username. 
 
 ## Re-purposing (Download)
 This is a bit more painful, but it has the main benefit of it doesn't rely on GitHub, RawGit, and your internet connection.
-1. Download a ZIP of the repository and move it to where you want to store it in your computer.
-2. Create a shortcut as follows "C:<i>directorytochrome.exe</i> --allow-file-access-from-files file:///C:<i>directorytoindex.html</i>" (This is for Windows)
+1. Download a ZIP of the repository and move it to where you want to store it in your computer.<br>
+2. Create a shortcut as follows "C:<i>directorytochrome.exe</i> --allow-file-access-from-files file:///C:<i>directorytoindex.html</i>" (This is for Windows)<br>
 3. Repeat if on a different computer, as location of chrome.exe can vary from installation date and OS
 
 ## Adding Songs
