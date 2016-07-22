@@ -82,7 +82,7 @@ AddSong("Tut Tut Child","Dragon Pirates","EDM","TutTutChild_DragonPirates.mp3","
 AddSong("Tut Tut Child","Maelstrom","Drumstep","TutTutChild_Maelstrom.mp3","img/artists/tuttutchild.png","monstercat007solace")
 AddSong("Tut Tut Child","Power Fracture","EDM","TutTutChild_PowerFracture.mp3","img/artists/tuttutchild.png","powerfracturesingle")
 
-AddSong("Vicetone","Heatbeat<br>(feat. Collin McLoughlin)","Progressive House","Vicetone_Heartbeat.mp3","img/artists/vicetone.png","monstercat012aftermath")
+AddSong("Vicetone","Heartbeat<br>(feat. Collin McLoughlin)","Progressive House","Vicetone_Heartbeat.mp3","img/artists/vicetone.png","monstercat012aftermath")
 
 AddSong("Varien & 7 Minutes Dead","Mirai Sekai (Continuous Mix)","EDM","VarienAnd7MinutesDead_MiraiSekaiContinuousMix.mp3","img/artists/varien.png","miraisekaiep")
 AddSong("Varien","Valkyrie<br>(feat. Laura Brehm)","Drumstep","Varien_Valkyrie.mp3","img/artists/varien.png","valkyriesingle")
