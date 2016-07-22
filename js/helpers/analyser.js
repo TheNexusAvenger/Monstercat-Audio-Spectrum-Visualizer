@@ -12,6 +12,7 @@ var spectrumMinExponent = 3;
 var spectrumExponentScale = 2;
 var SideWeight = 2
 var CenterWeight = 3
+var MaxSizeAdjuster = 24/22
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -63,7 +64,7 @@ function AverageTransform(Array) {
             //Code above was replaced by weighted averaging. Appears to work better.
             Value = (((PrevValue + NextValue)/2)*SideWeight + (CurValue*CenterWeight))/(SideWeight + CenterWeight)
         }
-        Value = Math.min(Value + 1, spectrumHeight);
+        Value = Math.min(Value + 1, spectrumHeight) * MaxSizeAdjuster;
 
         Values[i] = Value;
     }
