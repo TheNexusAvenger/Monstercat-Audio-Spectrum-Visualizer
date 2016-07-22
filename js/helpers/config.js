@@ -24,8 +24,8 @@ var SpectrumLogScale = 1.8
 var SpectrumBarCount = 63
 var Bar1080pWidth = 15
 var Bar1080pSeperation = 7
-var BarHeightToWidthRatio = 18
-var LogoSpacing = 10
+var BarHeightToWidthRatio = 24
+var LogoSpacing = 25
 var LogoSize = 150
 
 var WidthBoundArea = 0.8
