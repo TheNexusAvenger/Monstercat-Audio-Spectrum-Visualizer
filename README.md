@@ -27,3 +27,6 @@ This process is more involved than ideal, but you can add songs.
 
 ## Running It
 To run this, a decent CPU is required (higher core speed is preferred to more cores). Running on low end computers and phones/tablets may have stutering. Google Chrome and Microsoft Edge are supported, Safari and Firefox may have some compatibility problems, and Internet Explorer isn't supported because the AudioContext object isn't defined.
+
+## About Data Encoding
+For now, data can be exported as a Roblox Model XML with the positions of the given bars at the given times. You will need to enable it in /js/helpers/config.js.
