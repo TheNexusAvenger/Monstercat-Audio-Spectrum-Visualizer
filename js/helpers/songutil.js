@@ -62,6 +62,7 @@ function LoadSound(Url,ArtistLogo,Album) {
 
   Request.onload = () => {
       Context.decodeAudioData(Request.response, function(Buffer) {
+          Stopped = false
           CreateSourceBuffer()
           Source.buffer = Buffer
           Source.connect(Context.destination)
@@ -257,7 +258,6 @@ function PlayRandomSong(){
 function ForceStop() {
   Playing = false
   Paused = false
-  Stopped = false
   CurrentTimeOffset = 0
   if (DownloadSongData == true) {
     var ModuleName = ArtistName + "_" + SongName
@@ -281,7 +281,7 @@ function CreateSourceBuffer(ExistingBuffer) {
     Source.connect(Context.destination)
   }
   Source.onended = function() {
-    if (Paused == false) {
+    if (Paused == false && Stopped == false) {
       ForceStop()
     }
   }
