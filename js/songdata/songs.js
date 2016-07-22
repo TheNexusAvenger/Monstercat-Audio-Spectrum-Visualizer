@@ -5,6 +5,9 @@ AddSong("Aero Chord","4U","Moombahton","AeroChord_4U.mp3","img/artists/aerochord
 AddSong("Aero Chord","Boundless","Trap","AeroChord_Boundless.mp3","img/artists/aerochord.png","boundlesssingle")
 AddSong("Aero Chord & Razihel","Titans","Trap","AeroChordAndRazihel_Titans.mp3","img/artists/aerochord.png","titanssingle")
 
+AddSong("Au5","Crossroad<br>(feat. Danyka Nadeau)","Trance","Au5_Crossroad.mp3","img/artists/au5.png","crossroadsingle")
+AddSong("Au5","Snowblind<br>(feat. Tasha Baxter)","Dubstep","Au5_Snowblind.mp3","img/artists/au5.png","snowblindsingle")
+
 AddSong("Astronaut","Apollo<br>(Radio Edit)","Electro","Astronaut_ApolloRadioEdit.mp3","img/artists/astronaut.png","apolloep")
 AddSong("Astronaut","Champions","House","Astronaut_Champions.mp3","img/artists/astronaut.png","championssingle")
 AddSong("Astronaut","Quantum","Electro","Astronaut_Quantum.mp3","img/artists/astronaut.png","quantumep")
@@ -14,6 +17,8 @@ AddSong("Astronaut","Rain<br>(Stephen Walking Remix)","Glitch Hop or 110 BPM","A
 AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro","AstronautAndFarTooLoud_WarFOOLAndDidrickRemix.mp3","img/artists/astronaut.png","destinationwar")
 
 AddSong("DotEXE","Inside Out","EDM","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
+
+AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
 
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
 
@@ -64,6 +69,8 @@ AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlrig
 AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Hard Dance","Stonebank_LiftYouUp.mp3","img/artists/stonebank.png","monstercat5yearanniversary")
 AddSong("Stonebank","Stronger<br>(feat. EMEL)","Hardcore","Stonebank_Stronger.mp3","img/artists/stonebank.png","strongersingle")
 
+AddSong("Summer Was Fun","Hold On<br>(feat. Q'aila)","Indie Dance","SummerWasFun_HoldOn.mp3","img/artists/summerwasfun.png","holdonsingle")
+
 AddSong("Tristam","Crave","Electro House","Tristam_Crave.mp3","img/artists/tristam.png","cravesingle")
 AddSong("Tristam & Braken","Frame Of Mind","Drum & Bass","TristamAndBraken_FrameOfMind.mp3","img/artists/tristam.png","frameofmindsingle")
 AddSong("Tristam","The Vine","Drumstep","Tristam_TheVine.mp3","img/artists/tristam.png","thevinesingle")
@@ -76,3 +83,6 @@ AddSong("Tut Tut Child","Maelstrom","Drumstep","TutTutChild_Maelstrom.mp3","img/
 AddSong("Tut Tut Child","Power Fracture","EDM","TutTutChild_PowerFracture.mp3","img/artists/tuttutchild.png","powerfracturesingle")
 
 AddSong("Vicetone","Heatbeat<br>(feat. Collin McLoughlin)","Progressive House","Vicetone_Heartbeat.mp3","img/artists/vicetone.png","monstercat012aftermath")
+
+AddSong("Varien & 7 Minutes Dead","Mirai Sekai (Continuous Mix)","EDM","VarienAnd7MinutesDead_MiraiSekaiContinuousMix.mp3","img/artists/varien.png","miraisekaiep")
+AddSong("Varien","Valkyrie<br>(feat. Laura Brehm)","Drumstep","Varien_Valkyrie.mp3","img/artists/varien.png","valkyriesingle")
