@@ -69,7 +69,7 @@ AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.
 
 AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight.mp3","img/artists/stonebank.png","allnightsingle")
 AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlright.mp3","img/artists/stonebank.png","bealrightsingle")
-AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Hard Dance","Stonebank_LiftYouUp.mp3","img/artists/stonebank.png","monstercat5yearanniversary")
+AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Trance","Stonebank_LiftYouUp.mp3","img/artists/stonebank.png","monstercat5yearanniversary")
 AddSong("Stonebank","Stronger<br>(feat. EMEL)","Hardcore","Stonebank_Stronger.mp3","img/artists/stonebank.png","strongersingle")
 
 AddSong("Summer Was Fun","Hold On<br>(feat. Q'aila)","Indie Dance","SummerWasFun_HoldOn.mp3","img/artists/summerwasfun.png","holdonsingle")
