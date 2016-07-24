@@ -1,7 +1,42 @@
 //AddSong("Artist Name","Song Name","Genre Name","File lovation in terms of songs/","Image location","Album Name")
 //    "Album Name" should be the same file in img/albums/ to display the image
 
-,"New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
+AddSong("Aero Chord","4U","Moombahton","AeroChord_4U.mp3","img/artists/aerochord.png","4usingle")
+AddSong("Aero Chord","Boundless","Trap","AeroChord_Boundless.mp3","img/artists/aerochord.png","boundlesssingle")
+AddSong("Aero Chord & Razihel","Titans","Trap","AeroChordAndRazihel_Titans.mp3","img/artists/aerochord.png","titanssingle")
+
+AddSong("Au5","Crossroad<br>(feat. Danyka Nadeau)","Trance","Au5_Crossroad.mp3","img/artists/au5.png","crossroadsingle")
+AddSong("Au5","Snowblind<br>(feat. Tasha Baxter)","Dubstep","Au5_Snowblind.mp3","img/artists/au5.png","snowblindsingle")
+
+AddSong("Astronaut","Apollo<br>(Radio Edit)","Electro","Astronaut_ApolloRadioEdit.mp3","img/artists/astronaut.png","apolloep")
+AddSong("Astronaut","Champions","House","Astronaut_Champions.mp3","img/artists/astronaut.png","championssingle")
+AddSong("Astronaut","Quantum","Electro","Astronaut_Quantum.mp3","img/artists/astronaut.png","quantumep")
+AddSong("Astronaut","Quantum<br>(Hellberg Remix)","Progressive House","Astronaut_QuantumHellbergRemix.mp3","img/artists/astronaut.png","destinationquantum")
+AddSong("Astronaut","Rain<br>(MitiS Remix)","Drumstep","Astronaut_RainMitiSRemix.mp3","img/artists/astronaut.png","destinationrain")
+AddSong("Astronaut","Rain<br>(Stephen Walking Remix)","Glitch Hop or 110 BPM","Astronaut_RainStephenWalkingRemix.mp3","img/artists/astronaut.png","destinationrain")
+AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro","AstronautAndFarTooLoud_WarFOOLAndDidrickRemix.mp3","img/artists/astronaut.png","destinationwar")
+
+AddSong("DotEXE","Inside Out","EDM","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
+
+AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
+
+AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
+
+AddSong("Hellberg & Rich Edwards","Ashes (Burn Your Love)<br>(feat. Danyka Nadeau)","Progressive House","HellbergAndRichEdwards_AshesBurnYourLove.mp3","img/artists/hellberg.png","ashessingle")
+AddSong("Hellberg","Get Up","Progressive House","Hellberg_GetUp.mp3","img/artists/hellberg.png","monstercat012aftermath")
+AddSong("Hellberg & Rich Edwards","Hands Of Time","Progressive House","HellbergAndRichEdwards_HandsOfTime.mp3","img/artists/hellberg.png","handsoftimesingle")
+AddSong("Hellberg","The Girl<br>(feat. Cozi Zeuhlsdoff)","Progressive House","Hellberg_TheGirl.mp3","img/artists/hellberg.png","thisismeep")
+AddSong("Hellberg","The Girl (feat. Cozi Zeuhlsdoff)<br>(Color Source Remix)","Future Bass","Hellberg_TheGirlColorSourceRemix.mp3","img/artists/hellberg.png","thegirltheremixes")
+
+AddSong("Tristam X Karma Fields","Build The Cities (Empire Of Sound)<br>(feat. Kerli)","Electro","TristamXKarmaFields_BuildTheCitiesEmpireOfSound.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
+AddSong("Karma Fields","Build The Cities<br>(feat. Kerli)","Electro","KarmaFields_BuildTheCities.mp3","img/artists/karmafields.png","newagedarkage")
+AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Project 46 Remix)","Progressive House","KarmaFields_BuildTheCitiesProject46Remix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
+AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Rootkit Remix)","Future House","KarmaFields_BuildTheCitiesRootkitRemix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
+AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/karmafields.png","newagedarkage")
+
+AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
+
+AddSong("Nitro Fun","New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
 AddSong("Nitro Fun","Soldiers","House","NitroFun_Soldiers.mp3","img/artists/nitrofun.png","soldierssingle")
 
 AddSong("Noisestorm","Heist","Trap","Noisestorm_Heist.mp3","img/artists/noisestorm.png","heistsingle")
