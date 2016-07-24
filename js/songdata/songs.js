@@ -62,6 +62,9 @@ AddSong("Pegboard Nerds & MIU","Weaponize","Dubstep","PegboardNerdsAndMIU_Weapon
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
 AddSong("Razihel","Legends<br>(Zatox Remix)","Hard Dance","Razihel_LegendsZatoxRemix.mp3","img/artists/razihel.png","legendszatoxremixsingle")
 
+AddSong("Rootkit","Against The Sun<br>(feat. Anna Yvette)","Drumstep","Rootkit_AgainstTheSun.mp3","img/artists/rootkit.png","againstthesunsingle")
+AddSong("Rootkit","Real Love<br>(feat. Danyka Nadeau)","Future House","Rootkit_RealLove.mp3","img/artists/rootkit.png","reallovesingle")
+
 AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.png","rattlesnakesingle")
 
 AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight.mp3","img/artists/stonebank.png","allnightsingle")
@@ -70,6 +73,9 @@ AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Hard Dance","Stonebank_LiftYo
 AddSong("Stonebank","Stronger<br>(feat. EMEL)","Hardcore","Stonebank_Stronger.mp3","img/artists/stonebank.png","strongersingle")
 
 AddSong("Summer Was Fun","Hold On<br>(feat. Q'aila)","Indie Dance","SummerWasFun_HoldOn.mp3","img/artists/summerwasfun.png","holdonsingle")
+AddSong("Summer Was Fun","Pick Up The Phone","Indie Dance","SummerWasFun_PickUpThePhone.mp3","img/artists/summerwasfun.png","pickupthephonesingle")
+AddSong("Summer Was Fun","Run To You<br>(feat. Meron Ryan)","House","SummerWasFun_RunToYou.mp3","img/artists/summerwasfun.png","runtoyousingle")
+AddSong("Summer Was Fun","Watching<br>(feat. Colordrive)","Indie Dance","SummerWasFun_Watching.mp3","img/artists/summerwasfun.png","watchingsingle")
 
 AddSong("Tristam","Crave","Electro House","Tristam_Crave.mp3","img/artists/tristam.png","cravesingle")
 AddSong("Tristam & Braken","Frame Of Mind","Drum & Bass","TristamAndBraken_FrameOfMind.mp3","img/artists/tristam.png","frameofmindsingle")
