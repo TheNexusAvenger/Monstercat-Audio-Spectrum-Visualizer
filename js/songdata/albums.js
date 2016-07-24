@@ -41,6 +41,9 @@ RegisterAlbum("basslinekickintheremixes","Pegboard Nerds - Bassline Kickin (The 
 RegisterAlbum("pinkcloudep","Pegboard Nerds - Pink Cloud EP",["Emoji","Pink Cloud (feat. Max Collins)","Just Like That (feat. Johnny Graves)","Downhearted (feat. Jonny Rose)","The End Is Near (Fire In The Hole VIP)"])
 RegisterAlbum("thelosttracksep","Pegboard Nerds - The Lost Tracks EP",["Frainbreeze","Close Encounter","20K","Lawless","Revenge Of The Nerds (VIP Mix)","Rocktronik"])
 
+RegisterAlbum("dreamsep","Rogue - Dream EP",["Dreams (feat. Laura Brehm)","Air","Moments (feat. Meg Dean)","Escape"])
+RegisterAlbum("earthep","Rogue - Earth EP",["From The Dust","Cataclysm (feat. Meg Dean)","Perfect Views","Through The Dark"])
+
 RegisterAlbum("dancetoep","Tut Tut Child - Dance To It EP",["Dance To It","Dragon Pirates","Fat Cat Adventures"])
 
 RegisterAlbum("miraisekaiep","Varien & 7 Minutes Dead - Mirai Sekai EP",["Mirai Sekai Pt.1: Neo-Seoul","Mirai Sekai Pt.2: Neo-Tokyo","Mirai Sekai Pt.3: Aeon Metropolis","Mirai Sekai Pt.4: Goodnight_Sequence","Mirai Sekai (Continuous Mix)"])
