@@ -8,7 +8,7 @@ var tailMargin = 0;
 var minMarginWeight = 0.6
 var marginDecay = 1.6
 var spectrumMaxExponent = 4
-var spectrumMinExponent = 3
+var spectrumMinExponent = 2
 var spectrumExponentScale = 2;
 var SideWeight = 2
 var CenterWeight = 2
@@ -87,9 +87,8 @@ function tailTransform(array) {
 function exponentialTransform(array) {
     var newArr = [];
     for (var i = 0; i < array.length; i++) {
-        var exp = (spectrumMaxExponent - spectrumMinExponent) * (1 - Math.pow(i / SpectrumBarCount, spectrumExponentScale)) + spectrumMinExponent;
+        var exp = spectrumMaxExponent + (spectrumMinExponent - spectrumMaxExponent) * (i/array.length)
         newArr[i] = Math.max(Math.pow(array[i] / spectrumHeight, exp) * spectrumHeight, 1);
     }
     return newArr;
 }
-
