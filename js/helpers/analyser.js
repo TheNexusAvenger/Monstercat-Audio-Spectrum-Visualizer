@@ -11,7 +11,7 @@ var spectrumMaxExponent = 4
 var spectrumMinExponent = 3
 var spectrumExponentScale = 2;
 var SideWeight = 2
-var CenterWeight = 3
+var CenterWeight = 2
 var MaxSizeAdjuster = 24/22
 
 var resRatio = (window.innerWidth/window.innerHeight)
@@ -28,18 +28,17 @@ function SpectrumEase(Value) {
 
 function TransformToVisualBins(Array) {
   var NewArray = []
-  var SamplePoints = []
   for (var i = 0; i < SpectrumBarCount; i++) {
     var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
-    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] * (Bin % 1)
-            + Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
-    SamplePoints[i] = Math.floor(Bin) + SpectrumStart
+    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] //* (Bin % 1)
+            //+ Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
   }
   UpdateParticleAttributes(NewArray)
 
   NewArray = exponentialTransform(NewArray);
   NewArray = tailTransform(NewArray);
   NewArray = AverageTransform(NewArray);
+
   return NewArray;
 }
 
@@ -93,3 +92,4 @@ function exponentialTransform(array) {
     }
     return newArr;
 }
+
