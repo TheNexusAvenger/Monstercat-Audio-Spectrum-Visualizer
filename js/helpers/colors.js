@@ -5,7 +5,6 @@ var MainColors = {
   'Drumstep': '#E20386',
   'Drum & Bass': '#E10304',
   'Trance': '#0584E3',
-  'Breaks': '#E06D61',
   'Electro': '#E2D904',
   'House': '#E28C06',
   'Hardcore': '#0DB104',
@@ -60,7 +59,8 @@ var OtherColors = {
 
     'Neofolk': 'Rock',
 
-    'Industrial': 'EDM'
+    'Industrial': 'EDM',
+    'Breaks': 'EDM',
 };
 
 for (var Key in OtherColors) {
