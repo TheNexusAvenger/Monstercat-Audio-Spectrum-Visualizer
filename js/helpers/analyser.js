@@ -3,13 +3,13 @@
 
 var barWidth = (SpectrumBarCount + Bar1080pSeperation) / SpectrumBarCount - Bar1080pSeperation;
 var spectrumDimensionScalar = 4.5
-var headMargin = 7;
-var tailMargin = 0;
+var headMargin = 7
+var tailMargin = 0
 var minMarginWeight = 0.6
 var marginDecay = 1.6
 var spectrumMaxExponent = 4
-var spectrumMinExponent = 2
-var spectrumExponentScale = 2;
+var spectrumMinExponent = 3
+var spectrumExponentScale = 2
 var SideWeight = 2
 var CenterWeight = 2
 var MaxSizeAdjuster = 24/22
