@@ -1,5 +1,7 @@
 var SetLastAlbumImage = false
 var SetLastAlbumText = false
+var CoverSpinSpeed = 200
+var TextSpinSpeed = 500
 
 function ResetToMonstercatLogo() {
   AlbumImage.src = "img/blankpixel.png"
@@ -18,8 +20,8 @@ function UpdateAlbumCover(CurrentTime,NewLogoSize) {
     var Type = NextAlbum[1]
     var Cover = NextAlbum[2]
 
-    var BeforeRatio = Clamp((Time - CurrentTime)/500)
-    var AfterRatio = Clamp((CurrentTime - Time)/500)
+    var BeforeRatio = Clamp((Time - CurrentTime)/CoverSpinSpeed)
+    var AfterRatio = Clamp((CurrentTime - Time)/CoverSpinSpeed)
 
     if (Type == "Turn" || Type == "Close") {
       var LogoRatio = EaseSineOut(BeforeRatio)
@@ -50,7 +52,7 @@ function UpdateAlbumCover(CurrentTime,NewLogoSize) {
       MonstercatLogo.style.left = (NewLogoSize - LogoSizeWidth)/2 + NewLogoSize*0.15*LogoRatio + "px"
     }
 
-    if (CurrentTime - 500 > Time) {
+    if (CurrentTime - CoverSpinSpeed > Time) {
       SetLastAlbumImage = false
       NextAlbumRotation++
     }
@@ -119,8 +121,8 @@ function UpdateAlbumText(CurrentTime,NewWidth) {
     var AlbumName = NextAlbum[2]
     var SongList = NextAlbum[3]
 
-    var BeforeRatio = Clamp((Time - CurrentTime)/500)
-    var AfterRatio = Clamp((CurrentTime - Time)/500)
+    var BeforeRatio = Clamp((Time - CurrentTime)/TextSpinSpeed)
+    var AfterRatio = Clamp((CurrentTime - Time)/TextSpinSpeed)
 
     if (Type == "Change" || Type == "Close") {
       var TextWidth = (NewWidth * BeforeRatio)
@@ -165,7 +167,7 @@ function UpdateAlbumText(CurrentTime,NewWidth) {
       AlbumTextDiv.style.width = TextWidth + "px"
     }
 
-    if (CurrentTime - 500 > Time) {
+    if (CurrentTime - TextSpinSpeed > Time) {
       SetLastAlbumText = false
       NextTextCycle++
     }
