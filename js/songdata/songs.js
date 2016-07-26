@@ -39,7 +39,9 @@ AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/art
 AddSong("Nitro Fun","New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
 AddSong("Nitro Fun","Soldiers","House","NitroFun_Soldiers.mp3","img/artists/nitrofun.png","soldierssingle")
 
+AddSong("Noisestorm","Barracuda","Breaks","Noisestorm_Barracuda.mp3","img/artists/noisestorm.png","barracudasingle")
 AddSong("Noisestorm","Heist","Trap","Noisestorm_Heist.mp3","img/artists/noisestorm.png","heistsingle")
+AddSong("Noisestorm","Leaving Now","Drum & Bass","Noisestorm_LeavingNow.mp3","img/artists/noisestorm.png","leavingnowsingle")
 
 AddSong("Project 46","No One<br>(feat. Matthew Steeper)","Progressive House","Project46_NoOne.mp3","img/artists/project46.png","monstercat012aftermath")
 AddSong("Project 46","Reasons<br>(feat. Andrew Allen)","House","Project46_Reasons.mp3","img/artists/project46.png","reasonssingle")
