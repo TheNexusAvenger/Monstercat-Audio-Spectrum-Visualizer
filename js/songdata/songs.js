@@ -16,7 +16,7 @@ AddSong("Astronaut","Rain<br>(MitiS Remix)","Drumstep","Astronaut_RainMitiSRemix
 AddSong("Astronaut","Rain<br>(Stephen Walking Remix)","Glitch Hop or 110 BPM","Astronaut_RainStephenWalkingRemix.mp3","img/artists/astronaut.png","destinationrain")
 AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro","AstronautAndFarTooLoud_WarFOOLAndDidrickRemix.mp3","img/artists/astronaut.png","destinationwar")
 
-AddSong("DotEXE","Inside Out","EDM","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
+AddSong("DotEXE","Inside Out","Trap","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
 
 AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
 
