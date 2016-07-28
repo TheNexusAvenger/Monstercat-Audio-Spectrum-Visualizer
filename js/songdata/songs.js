@@ -32,6 +32,7 @@ AddSong("Tristam X Karma Fields","Build The Cities (Empire Of Sound)<br>(feat. K
 AddSong("Karma Fields","Build The Cities<br>(feat. Kerli)","Electro","KarmaFields_BuildTheCities.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Project 46 Remix)","Progressive House","KarmaFields_BuildTheCitiesProject46Remix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
 AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Rootkit Remix)","Future House","KarmaFields_BuildTheCitiesRootkitRemix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
+AddSong("Karma Fields","Edge Of The World","Electro","KarmaFields_EdgeOfTheWorld.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/karmafields.png","newagedarkage")
 
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
