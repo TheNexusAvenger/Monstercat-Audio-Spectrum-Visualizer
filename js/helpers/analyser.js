@@ -15,7 +15,7 @@ var CenterWeight = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 1.8
+var SpectrumLogScale = 2.8//1.8
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
