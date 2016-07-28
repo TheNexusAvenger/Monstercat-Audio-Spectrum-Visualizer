@@ -18,9 +18,6 @@ var ParticlesEnabled = true //If true, particles in the background will be enabl
 var VelocityScaleFactor = 5
 
 //spectrum.js
-var SpectrumStart = 4
-var SpectrumEnd = 1200
-var SpectrumLogScale = 1.8
 var SpectrumBarCount = 63
 var Bar1080pWidth = 15
 var Bar1080pSeperation = 7
