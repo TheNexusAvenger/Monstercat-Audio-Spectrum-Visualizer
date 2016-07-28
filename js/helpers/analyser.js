@@ -3,16 +3,19 @@
 
 var barWidth = (SpectrumBarCount + Bar1080pSeperation) / SpectrumBarCount - Bar1080pSeperation;
 var spectrumDimensionScalar = 4.5
-var headMargin = 7
-var tailMargin = 0
+var headMargin = 7;
+var tailMargin = 0;
 var minMarginWeight = 0.6
 var marginDecay = 1.6
-var spectrumMaxExponent = 4
+var spectrumMaxExponent = 5
 var spectrumMinExponent = 3
-var spectrumExponentScale = 2
+var spectrumExponentScale = 2;
 var SideWeight = 2
 var CenterWeight = 2
-var MaxSizeAdjuster = 24/22
+
+var SpectrumStart = 0
+var SpectrumEnd = 8191
+var SpectrumLogScale = 2.8
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -28,20 +31,36 @@ function SpectrumEase(Value) {
 
 function TransformToVisualBins(Array) {
   var NewArray = []
+  var SamplePoints = []
   for (var i = 0; i < SpectrumBarCount; i++) {
     var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
-    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] //* (Bin % 1)
-            //+ Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
+    SamplePoints[i] = Math.floor(Bin + 0.5)
+  }
+
+  for (var i = 0; i < SpectrumBarCount; i++) {
+    var Start = SamplePoints[i]
+    var End = SamplePoints[i + 1]
+    if (End == null) {
+      End = SpectrumEnd
+    }
+    var Dif = End - Start
+    var NewValue = Array[i]
+    for (var j = 0; j < Dif; j++) {
+      NewValue = (NewValue + Array[i+j])/2
+
+    }
+    NewArray[i] = NewValue
   }
   UpdateParticleAttributes(NewArray)
 
-  NewArray = exponentialTransform(NewArray);
   NewArray = tailTransform(NewArray);
   NewArray = AverageTransform(NewArray);
+  NewArray = exponentialTransform(NewArray);
 
-  return NewArray;
+  return NewArray
 }
 
+//A new average function that doesn't shrink maxes is needed
 function AverageTransform(Array) {
     var Values = []
     var Length = Array.length
@@ -63,7 +82,7 @@ function AverageTransform(Array) {
             //Code above was replaced by weighted averaging. Appears to work better.
             Value = (((PrevValue + NextValue)/2)*SideWeight + (CurValue*CenterWeight))/(SideWeight + CenterWeight)
         }
-        Value = Math.min(Value + 1, spectrumHeight) * MaxSizeAdjuster
+        Value = Math.min(Value + 1, spectrumHeight)
 
         Values[i] = Value;
     }
