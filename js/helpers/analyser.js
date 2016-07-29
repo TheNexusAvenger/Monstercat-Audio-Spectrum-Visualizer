@@ -15,7 +15,7 @@ var CenterWeight = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.8//1.8
+var SpectrumLogScale = 2.8
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -39,8 +39,8 @@ function TransformToVisualBins(Array) {
   UpdateParticleAttributes(NewArray)
 
   NewArray = tailTransform(NewArray);
-  NewArray = AverageTransform(NewArray);
   NewArray = exponentialTransform(NewArray);
+  NewArray = AverageTransform(NewArray);
 
   return NewArray;
 }
@@ -48,6 +48,8 @@ function TransformToVisualBins(Array) {
 function AverageTransform(Array) {
     var Values = []
     var Length = Array.length
+
+
     for (var i = 0; i < Length; i++) {
         var Value = 0
         if (i == 0) {
@@ -58,19 +60,42 @@ function AverageTransform(Array) {
             var PrevValue = Array[i - 1]
             var CurValue = Array[i]
             var NextValue = Array[i + 1]
-            //if (CurValue >= PrevValue && CurValue >= NextValue) {
-            //  Value = (PrevValue + CurValue + NextValue) / 2.4;
-            //} else {
-            //  Value = (PrevValue + CurValue + NextValue) / 3
-            //}
-            //Code above was replaced by weighted averaging. Appears to work better.
-            Value = (((PrevValue + NextValue)/2)*SideWeight + (CurValue*CenterWeight))/(SideWeight + CenterWeight)
+
+            if (CurValue >= PrevValue && CurValue >= NextValue) {
+              Value = CurValue
+            } else {
+              Value = (CurValue + Math.max(NextValue,PrevValue))/2
+            }
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
         Values[i] = Value;
     }
-    return Values
+    //return Values
+
+    var NewValues = []
+    for (var i = 0; i < Length; i++) {
+        var Value = 0
+        if (i == 0) {
+            Value = Values[i];
+        } else if (i == Length - 1) {
+            Value = (Values[i - 1] + Values[i]) / 2
+        } else {
+            var PrevValue = Values[i - 1]
+            var CurValue = Values[i]
+            var NextValue = Values[i + 1]
+
+            if (CurValue >= PrevValue && CurValue >= NextValue) {
+              Value = CurValue
+            } else {
+              Value = (CurValue + Math.max(NextValue,PrevValue))/2
+            }
+        }
+        Value = Math.min(Value + 1, spectrumHeight)
+
+        NewValues[i] = Value;
+    }
+    return NewValues
 }
 
 function tailTransform(array) {
