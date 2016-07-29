@@ -88,7 +88,7 @@ function AverageTransform(Array) {
             if (CurValue >= PrevValue && CurValue >= NextValue) {
               Value = CurValue
             } else {
-              Value = (CurValue + Math.max(NextValue,PrevValue))/2
+              Value = (CurValue + (NextValue + PrevValue)/2)/2
             }
         }
         Value = Math.min(Value + 1, spectrumHeight)
