@@ -89,7 +89,7 @@ AddSong("Tristam","Once Again","Glitch Hop Or 110 BPM","Tristam_OnceAgain.mp3","
 AddSong("Tristam","Till It's Over","Glitch Hop Or 110 BPM","Tristam_TillItsOver.mp3","img/artists/tristam.png","tillitsoversingle")
 AddSong("Tristam","Truth","Electro","Tristam_Truth.mp3","img/artists/tristam.png","monstercat010conquest")
 
-AddSong("Tut Tut Child","Dragon Pirates","EDM","TutTutChild_DragonPirates.mp3","img/artists/tuttutchild.png","dancetoitep")
+AddSong("Tut Tut Child","Dragon Pirates","Drumstep","TutTutChild_DragonPirates.mp3","img/artists/tuttutchild.png","dancetoitep")
 AddSong("Tut Tut Child","Maelstrom","Drumstep","TutTutChild_Maelstrom.mp3","img/artists/tuttutchild.png","monstercat007solace")
 AddSong("Tut Tut Child","Power Fracture","EDM","TutTutChild_PowerFracture.mp3","img/artists/tuttutchild.png","powerfracturesingle")
 
