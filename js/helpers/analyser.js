@@ -5,9 +5,9 @@ var barWidth = (SpectrumBarCount + Bar1080pSeperation) / SpectrumBarCount - Bar1
 var spectrumDimensionScalar = 4.5
 var headMargin = 7
 var tailMargin = 0
-var minMarginWeight = 0.6
+var minMarginWeight = 0.7
 var marginDecay = 1.6
-var spectrumMaxExponent = 4
+var spectrumMaxExponent = 5
 var spectrumMinExponent = 2
 var spectrumExponentScale = 2
 var SideWeight = 2
@@ -15,7 +15,7 @@ var CenterWeight = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.8
+var SpectrumLogScale = 2.5
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -38,12 +38,14 @@ function TransformToVisualBins(Array) {
   }
   UpdateParticleAttributes(NewArray)
 
+  NewArray = AverageTransform(NewArray);
   NewArray = tailTransform(NewArray);
   NewArray = exponentialTransform(NewArray);
-  NewArray = AverageTransform(NewArray);
 
   return NewArray;
 }
+
+
 
 function AverageTransform(Array) {
     var Values = []
@@ -86,7 +88,7 @@ function AverageTransform(Array) {
             var NextValue = Values[i + 1]
 
             if (CurValue >= PrevValue && CurValue >= NextValue) {
-              Value = CurValue
+              Value = (CurValue + Math.max(NextValue,PrevValue))/2
             } else {
               Value = (CurValue + (NextValue + PrevValue)/2)/2
             }
