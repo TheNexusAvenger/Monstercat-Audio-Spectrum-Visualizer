@@ -253,7 +253,8 @@ function HandleAudio() {
 
   var DataArray = new Uint8Array(Analyser.frequencyBinCount)
   Analyser.getByteFrequencyData(DataArray)
-  var TransformedVisualData = TransformToVisualBins(DataArray)
+  var VisualData = GetVisualBins(DataArray)
+  var TransformedVisualData = TransformToVisualBins(VisualData)
 
   var NewSeperation = Bar1080pSeperation * Mult
   var NewBarWidth = Bar1080pWidth * Mult
@@ -262,9 +263,16 @@ function HandleAudio() {
     if (Frame != -1 && LastFrame != Frame) {
       LastFrame = Frame
       CompiledSongData = CompiledSongData + "\n[" + Frame + "] = {"
-      for (var i = 0; i < SpectrumBarCount; i++) {
-        var Height = TransformedVisualData[i]/255
-        CompiledSongData = CompiledSongData + Math.floor(Height*RecordDownScale) + ","
+      if (EncodeRawData == true) {
+        for (var i = 0; i < SpectrumBarCount; i++) {
+          var Height = VisualData[i]/255
+          CompiledSongData = CompiledSongData + Math.floor(Height*RecordDownScale) + ","
+        }
+      } else {
+        for (var i = 0; i < SpectrumBarCount; i++) {
+          var Height = TransformedVisualData[i]/255
+          CompiledSongData = CompiledSongData + Math.floor(Height*RecordDownScale) + ","
+        }
       }
       CompiledSongData = CompiledSongData + "},"
     }
