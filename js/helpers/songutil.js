@@ -195,7 +195,11 @@ function PlayRandomSong(){
 	GenreColor = GetColorFromGenre(GenreName)
   CreateNewFleck()
 
-  DownloadSongData = false
+  if (EncodeEnabledByDefault == true) {
+    DownloadSongData = true
+  } else {
+    DownloadSongData = false
+  }
 
   var SongBackgroundOverride = SongBackgrounds[SingleLineSongName]
   var AlbumBackgroundOverride = AlbumBackgrounds[Album]
@@ -291,7 +295,7 @@ function InitializeSpectrumHandler() {
   SongOrder = GetRandomTableOfNumbers(Songs.length)
   AudioNode.onaudioprocess = HandleAudio
   Analyser.fftSize = FFTSize
-  Analyser.smoothingTimeConstant = 0.20
+  Analyser.smoothingTimeConstant = 0.2
   GainNode.gain.value = 0;
   GainNode.connect(Context.destination)
   AudioNode.connect(Context.destination)
