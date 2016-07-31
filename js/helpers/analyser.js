@@ -29,7 +29,7 @@ function SpectrumEase(Value) {
   return Math.pow(Value, SpectrumLogScale)
 }
 
-function TransformToVisualBins(Array) {
+function GetVisualBins(Array) {
   var NewArray = []
   for (var i = 0; i < SpectrumBarCount; i++) {
     var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
@@ -38,11 +38,15 @@ function TransformToVisualBins(Array) {
   }
   UpdateParticleAttributes(NewArray)
 
-  NewArray = AverageTransform(NewArray);
-  NewArray = tailTransform(NewArray);
-  NewArray = exponentialTransform(NewArray);
+  return NewArray
+}
 
-  return NewArray;
+function TransformToVisualBins(Array) {
+  Array = AverageTransform(Array);
+  Array = tailTransform(Array);
+  Array = exponentialTransform(Array);
+
+  return Array;
 }
 
 
@@ -73,7 +77,6 @@ function AverageTransform(Array) {
 
         Values[i] = Value;
     }
-    //return Values
 
     var NewValues = []
     for (var i = 0; i < Length; i++) {
