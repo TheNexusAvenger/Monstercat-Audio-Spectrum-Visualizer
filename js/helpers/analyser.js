@@ -43,7 +43,7 @@ function GetVisualBins(Array) {
 
 function TransformToVisualBins(Array) {
   Array = AverageTransform(Array)
-  //Array = tailTransform(Array)
+  Array = tailTransform(Array)
   Array = exponentialTransform(Array)
 
   return Array;
