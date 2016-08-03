@@ -62,6 +62,7 @@ AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
 AddSong("Pegboard Nerds & MIU","Weaponize","Dubstep","PegboardNerdsAndMIU_Weaponize.mp3","img/artists/pegboardnerds.png","weaponizesingle")
 
+AddSong("Razihel","Children Of The Night","Bounce","Razihel_ChildrenOfTheNight.mp3","img/artists/razihel.png","childrenofthenightsingle")
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
 AddSong("Razihel","Legends<br>(Zatox Remix)","Hard Dance","Razihel_LegendsZatoxRemix.mp3","img/artists/razihel.png","legendszatoxremixsingle")
 
