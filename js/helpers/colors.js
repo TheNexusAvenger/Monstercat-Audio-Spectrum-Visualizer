@@ -31,6 +31,8 @@ var OtherColors = {
     'Bounce': 'Electro House',
     'Complextro': 'Electro House',
     'Outrun': 'Electro House',
+    
+    'Bounce': 'Electro',
 
     'Electro Swing': 'House',
 
