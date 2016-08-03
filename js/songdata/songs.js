@@ -16,11 +16,15 @@ AddSong("Astronaut","Rain<br>(MitiS Remix)","Drumstep","Astronaut_RainMitiSRemix
 AddSong("Astronaut","Rain<br>(Stephen Walking Remix)","Glitch Hop or 110 BPM","Astronaut_RainStephenWalkingRemix.mp3","img/artists/astronaut.png","destinationrain")
 AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro","AstronautAndFarTooLoud_WarFOOLAndDidrickRemix.mp3","img/artists/astronaut.png","destinationwar")
 
+AddSong("Botnek & I See MONSTAS","Deeper Love","Drum & Bass","BotnekAndISeeMONSTAS_DeeperLove.mp3","img/artists/botnek.png","deeperlovesingle")
+
 AddSong("DotEXE","Inside Out","Trap","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
 
 AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
 
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
+
+AddSong("Grant Bowtie","Reach","Future Bass","GrantBowties_Reach.mp3","img/artists/grantbowtie.png","reachsingle")
 
 AddSong("Hellberg & Rich Edwards","Ashes (Burn Your Love)<br>(feat. Danyka Nadeau)","Progressive House","HellbergAndRichEdwards_AshesBurnYourLove.mp3","img/artists/hellberg.png","ashessingle")
 AddSong("Hellberg","Get Up","Progressive House","Hellberg_GetUp.mp3","img/artists/hellberg.png","monstercat012aftermath")
@@ -34,6 +38,11 @@ AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Project 46 Remix)","P
 AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Rootkit Remix)","Future House","KarmaFields_BuildTheCitiesRootkitRemix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
 AddSong("Karma Fields","Edge Of The World","Electro","KarmaFields_EdgeOfTheWorld.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/karmafields.png","newagedarkage")
+
+AddSong("Laszlo","Interstellar","Progressive House","Laszlo_Interstellar.mp3","img/artists/laszlo.png","interstellarsingle")
+AddSong("Laszlo","Supernova","Electro","Laszlo_Supernova.mp3","img/artists/laszlo.png","supernovasingle")
+
+AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/letsbefriends.png","ftwsingle")
 
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
 
@@ -72,6 +81,8 @@ AddSong("Rootkit","Real Love<br>(feat. Danyka Nadeau)","Future House","Rootkit_R
 AddSong("Rogue","Moments<br>(feat. Meg Dean)","House","Rogue_Moments.mp3","img/artists/rogue.png","dreamsep")
 AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.png","rattlesnakesingle")
 AddSong("Rogue","Through The Dark","Electro","Rogue_ThroughTheDark.mp3","img/artists/rogue.png","earthep")
+
+AddSong("SCNDL","The Munsta<br>(AlphavibeZ Remix)","Hard Dance","SCNDL_TheMunstaAlphavibeZRemix.mp3","img/artists/scndl.png","themunstatheremixesep")
 
 AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight.mp3","img/artists/stonebank.png","allnightsingle")
 AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlright.mp3","img/artists/stonebank.png","bealrightsingle")
