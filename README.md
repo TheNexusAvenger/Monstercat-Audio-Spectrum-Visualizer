@@ -4,8 +4,12 @@ Also: More songs will be added, just need to get them
 Viewing: 
 (Development) https://rawgit.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/master/index.html
 (Production) https://cdn.rawgit.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/master/index.html
-<br>For limiting your search, add a ? to the end (make sure it isn't after a slash), then add song=SongNameHere with spaces if applicapable, or artist=ArtistName with spaces if applicable. To use both, use ?song=SomeName&artist=SomeName. Current browsers should automatically convert blank spaces to %20.
-
+<br>Additional parameters:
+<br>(? or &)song=Song Name
+<br>(? or &)artist=Artist Name
+<br>(? or &)genre=Genre Name
+<br>Ex: index.html?song=The Vine&artist=Tristam
+<br>
 This is a complete redo of the modified version of [vis.j](https://github.com/TheNexusAvenger/vis.js), from the one by [caseif](https://github.com/caseif/vis.js). This fixes some of the key issues, such as the page having to refresh to work and being domain dependant, and adds features and other performance improvements, and scaling.
 
 ## Re-purposing (GitHub Fork)
