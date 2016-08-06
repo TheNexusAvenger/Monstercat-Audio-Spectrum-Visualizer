@@ -18,9 +18,11 @@ function $_GET(param) {
 
 var SongNameSearch = ""
 var ArtistNameSearch = ""
+var GenreNameSearch = ""
 
 var WantedSongName = $_GET("song")
 var WantedArtistName = $_GET("artist")
+var WantedGenreName = $_GET("genre")
 
 if (WantedSongName) {
   SongNameSearch = decodeURIComponent(WantedSongName.toLowerCase())
