@@ -109,8 +109,24 @@ function LoadSound(Url,ArtistLogo,Album) {
 }
 //
 
+function RemoveNewLines(String) {
+  String = String.replace("<br/>"," ")
+  String = String.replace("<br>"," ")
+  String = String.replace("<Br/>"," ")
+  String = String.replace("<Br>"," ")
+  String = String.replace("<bR/>"," ")
+  String = String.replace("<bR>"," ")
+  String = String.replace("<BR/>"," ")
+  String = String.replace("<BR>"," ")
+  return String
+}
+
 function AddSong(ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName){
-	Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
+  if (RemoveNewLines(SongName).toLowerCase().match(SongNameSearch) != null) {
+    if (RemoveNewLines(ArtistName).toLowerCase().match(ArtistNameSearch) != null) {
+	     Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
+    }
+  }
 }
 
 function GetTableLength(Table) {
@@ -172,7 +188,7 @@ function PlayRandomSong(){
   var SongData = Songs[SongOrder[SongSpot]]
   ArtistName = SongData[0]
 	SongName = SongData[1]
-  SingleLineSongName = SongName.replace("<br/>"," ").replace("<br>"," ")
+  SingleLineSongName = RemoveNewLines(SongName)
 	GenreName =	SongData[2]
 	var FileName = "songs/" + SongData[3]
   var ArtistLogo = SongData[4]
@@ -240,11 +256,11 @@ function PlayRandomSong(){
   MainDiv.style.display = "none"
   LoadingDiv.style.display = "block"
   document.title = "Loading..."
-  LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+  LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + ArtistName + " - " + SingleLineSongName
 
   if (IndluceFileMetadata == true) {
     CompiledSongData = CompiledSongData + "\n\tArtistName = \"" + ArtistName + "\","
-    CompiledSongData = CompiledSongData + "\n\tSongName = \"" + SongName.replace("<br>"," ").replace("<br/>"," ") + "\","
+    CompiledSongData = CompiledSongData + "\n\tSongName = \"" + SingleLineSongName + "\","
     CompiledSongData = CompiledSongData + "\n\tGenreName = \"" + GenreName + "\","
   }
   if (IndluceRecordMetadata == true) {
