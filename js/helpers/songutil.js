@@ -124,7 +124,9 @@ function RemoveNewLines(String) {
 function AddSong(ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName){
   if (RemoveNewLines(SongName).toLowerCase().match(SongNameSearch) != null) {
     if (RemoveNewLines(ArtistName).toLowerCase().match(ArtistNameSearch) != null) {
-	     Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
+    	if (RemoveNewLines(GenreName).toLowerCase().match(GenreNameSearch) != null) {
+ 	       Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
+       }
     }
   }
 }
