@@ -29,3 +29,7 @@ if (WantedSongName) {
 if (WantedArtistName) {
   ArtistNameSearch = decodeURIComponent(WantedArtistName.toLowerCase())
 }
+
+if (WantedGenreName) {
+  GenreNameSearch = decodeURIComponent(WantedGenreName.toLowerCase())
+}
