@@ -44,8 +44,10 @@ AddSong("Laszlo","Supernova","Electro","Laszlo_Supernova.mp3","img/artists/laszl
 
 AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/letsbefriends.png","ftwsingle")
 
+AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
 
+AddSong("Nitro Fun","Cheat Codes","Electro","NitroFun_CheatCodes.mp3","img/artists/nitrofun.png","cheatcodessingle")
 AddSong("Nitro Fun","New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
 AddSong("Nitro Fun","Soldiers","House","NitroFun_Soldiers.mp3","img/artists/nitrofun.png","soldierssingle")
 
@@ -57,15 +59,18 @@ AddSong("Project 46","No One<br>(feat. Matthew Steeper)","Progressive House","Pr
 AddSong("Project 46","Reasons<br>(feat. Andrew Allen)","House","Project46_Reasons.mp3","img/artists/project46.png","reasonssingle")
 
 AddSong("Pegborad Nerds","Bassline Kickin<br>(Astronaut Remix)","Electro","PegboardNerds_BasslineKickinAstronautRemix.mp3","img/artists/pegboardnerds.png","basslinekickintheremixes")
+AddSong("Pegborad Nerds","Bassline Kickin","EDM","PegboardNerds_BasslineKickin.mp3","img/artists/pegboardnerds.png","basslinekickinsingle")
 AddSong("Pegboard Nerds","Blackout","Dubstep","PegboardNerds_Blackout.mp3","img/artists/pegboardnerds.png","monstercat5yearanniversary")
 AddSong("Pegboard Nerds","Downhearted<br>(feat. Jonny Rose)","Dubstep","PegboardNerds_Downhearted.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Downhearted (feat. Jonny Rose)<br>(Ryos Remix)","Future Bass","PegboardNerds_DownheartedRyosRemix.mp3","img/artists/pegboardnerds.png","pinkcloudtheremixes")
 AddSong("Pegboard Nerds","Emergency","Electro","PegboardNerds_Emergency.mp3","img/artists/pegboardnerds.png","emergencysingle")
 AddSong("Pegboard Nerds","Emoji","Future Bass","PegboardNerds_Emoji.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Just Like That<br>(feat. Johnny Graves)","Future Bass","PegboardNerds_JustLikeThat.mp3","img/artists/pegboardnerds.png","pinkcloudep")
+AddSong("Pegborad Nerds","Luigi's Mansion","Dubstep","PegboardNerds_LuigisMansion.mp3","img/artists/pegboardnerds.png","luigismansionsingle")
 AddSong("Pegboard Nerds","New Style","EDM","PegboardNerds_NewStyle.mp3","img/artists/pegboardnerds.png","newstylesingle")
 AddSong("Pegboard Nerds","Pink Cloud<br>(feat. Max Collins)","Dubstep","PegboardNerds_PinkCloud.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Revenge Of The Nerds<br>(VIP Mix)","Dubstep","PegboardNerds_RevengeOfTheNerdsVIPMix.mp3","img/artists/pegboardnerds.png","thelosttracksep")
+AddSong("Pegborad Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
 AddSong("Pegboard Nerds","Swamp Thing","EDM","PegboardNerds_SwampThing.mp3","img/artists/pegboardnerds.png","swampthingsingle")
 AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/artists/pegboardnerds.png","trythissingle")
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
@@ -104,6 +109,7 @@ AddSong("Tristam","Truth","Electro","Tristam_Truth.mp3","img/artists/tristam.png
 AddSong("Tut Tut Child","Dragon Pirates","Drumstep","TutTutChild_DragonPirates.mp3","img/artists/tuttutchild.png","dancetoitep")
 AddSong("Tut Tut Child","Maelstrom","Drumstep","TutTutChild_Maelstrom.mp3","img/artists/tuttutchild.png","monstercat007solace")
 AddSong("Tut Tut Child","Power Fracture","EDM","TutTutChild_PowerFracture.mp3","img/artists/tuttutchild.png","powerfracturesingle")
+AddSong("Tut Tut Child","The Uppity Strut","Glitch Hop Or 110 BPM","TutTutChild_TheUppityStrut.mp3","img/artists/tuttutchild.png","theuppitystrutsingle")
 
 AddSong("Vicetone","Heartbeat<br>(feat. Collin McLoughlin)","Progressive House","Vicetone_Heartbeat.mp3","img/artists/vicetone.png","monstercat012aftermath")
 
