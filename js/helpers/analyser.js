@@ -30,7 +30,7 @@ function SpectrumEase(Value) {
 }
 
 function GetVisualBins(Array) {
-  var NewArray = []
+  /*var NewArray = []
   for (var i = 0; i < SpectrumBarCount; i++) {
     var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
     NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] //* (Bin % 1)
@@ -38,13 +38,38 @@ function GetVisualBins(Array) {
   }
   UpdateParticleAttributes(NewArray)
 
+  return NewArray*/
+
+  var SamplePoints = []
+  var NewArray = []
+  for (var i = 0; i < SpectrumBarCount; i++) {
+    var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
+    SamplePoints[i] = Math.floor(Bin)
+  }
+
+  for (var i = 0; i < SpectrumBarCount; i++) {
+    var CurSpot = SamplePoints[i]
+    var NextSpot = SamplePoints[i + 1]
+    if (NextSpot == null) {
+      NextSpot = SpectrumEnd
+    }
+
+    var CurMax = Array[CurSpot]
+    var Dif = NextSpot - CurSpot
+    for (var j = 1; j < Dif; j++) {
+      CurMax = (Array[CurSpot + j] + CurMax)/2
+    }
+    NewArray[i] = CurMax
+  }
+
+  UpdateParticleAttributes(NewArray)
   return NewArray
 }
 
 function TransformToVisualBins(Array) {
-  Array = AverageTransform(Array)
-  Array = tailTransform(Array)
-  Array = exponentialTransform(Array)
+  Array = AverageTransform(Array);
+  Array = tailTransform(Array);
+  Array = exponentialTransform(Array);
 
   return Array;
 }
@@ -67,40 +92,14 @@ function AverageTransform(Array) {
             var CurValue = Array[i]
             var NextValue = Array[i + 1]
 
-            if (CurValue >= PrevValue && CurValue >= NextValue) {
-              Value = CurValue
-            } else {
-              Value = (CurValue + Math.max(NextValue,PrevValue))/2
-            }
+            Value = (CurValue + (NextValue + PrevValue)/2)/2
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
         Values[i] = Value;
     }
 
-    var NewValues = []
-    for (var i = 0; i < Length; i++) {
-        var Value = 0
-        if (i == 0) {
-            Value = Values[i];
-        } else if (i == Length - 1) {
-            Value = (Values[i - 1] + Values[i]) / 2
-        } else {
-            var PrevValue = Values[i - 1]
-            var CurValue = Values[i]
-            var NextValue = Values[i + 1]
-
-            if (CurValue >= PrevValue && CurValue >= NextValue) {
-              Value = (CurValue + Math.max(NextValue,PrevValue))/2
-            } else {
-              Value = (CurValue + (NextValue + PrevValue)/2)/2
-            }
-        }
-        Value = Math.min(Value + 1, spectrumHeight)
-
-        NewValues[i] = Value;
-    }
-    return NewValues
+    return Values
 }
 
 function tailTransform(array) {
