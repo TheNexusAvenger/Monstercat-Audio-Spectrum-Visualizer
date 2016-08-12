@@ -43,6 +43,7 @@ AddSong("Laszlo","Interstellar","Progressive House","Laszlo_Interstellar.mp3","i
 AddSong("Laszlo","Supernova","Electro","Laszlo_Supernova.mp3","img/artists/laszlo.png","supernovasingle")
 
 AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/letsbefriends.png","ftwsingle")
+AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","LetsBeFriends_ManslaughterVipMix.mp3","img/artists/letsbefriends.png","monstercat014discovery")
 
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
@@ -93,6 +94,7 @@ AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight
 AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlright.mp3","img/artists/stonebank.png","bealrightsingle")
 AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Trance","Stonebank_LiftYouUp.mp3","img/artists/stonebank.png","monstercat5yearanniversary")
 AddSong("Stonebank","Stronger<br>(feat. EMEL)","Hardcore","Stonebank_Stronger.mp3","img/artists/stonebank.png","strongersingle")
+AddSong("Stonebank","Who's Got Your Love","Happy Hardcore","Stonebank_WhosGotYourLove.mp3","img/artists/stonebank.png","whosgotyourlovesingle")
 
 AddSong("Summer Was Fun","Hold On<br>(feat. Q'aila)","Indie Dance","SummerWasFun_HoldOn.mp3","img/artists/summerwasfun.png","holdonsingle")
 AddSong("Summer Was Fun","Pick Up The Phone","Indie Dance","SummerWasFun_PickUpThePhone.mp3","img/artists/summerwasfun.png","pickupthephonesingle")
