@@ -68,5 +68,6 @@ RegisterBackground("pinkcloudtheremixes","Album",[["img/backgrounds/pinkcloudbac
 RegisterBackground("thelosttracksep","Album",[["img/backgrounds/thelosttracksbackground.png",1920,1080,"rgba(0,0,0,0)"]],null)
 
 RegisterBackground("Lift You Up (feat. EMEL)","Song",[["img/backgrounds/liftyouupbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+RegisterBackground("Who's Got Your Love","Song",[["img/backgrounds/whosgotyourlovebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("miraisekaiep","Album",[["img/backgrounds/miraisekaibackground.jpg",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
