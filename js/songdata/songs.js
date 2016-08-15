@@ -71,7 +71,7 @@ AddSong("Pegborad Nerds","Luigi's Mansion","Dubstep","PegboardNerds_LuigisMansio
 AddSong("Pegboard Nerds","New Style","EDM","PegboardNerds_NewStyle.mp3","img/artists/pegboardnerds.png","newstylesingle")
 AddSong("Pegboard Nerds","Pink Cloud<br>(feat. Max Collins)","Dubstep","PegboardNerds_PinkCloud.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Revenge Of The Nerds<br>(VIP Mix)","Dubstep","PegboardNerds_RevengeOfTheNerdsVIPMix.mp3","img/artists/pegboardnerds.png","thelosttracksep")
-AddSong("Pegborad Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
+AddSong("Pegboard Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
 AddSong("Pegboard Nerds","Swamp Thing","EDM","PegboardNerds_SwampThing.mp3","img/artists/pegboardnerds.png","swampthingsingle")
 AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/artists/pegboardnerds.png","trythissingle")
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
