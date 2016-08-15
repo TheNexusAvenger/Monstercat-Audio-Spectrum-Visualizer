@@ -15,7 +15,7 @@ var CenterWeight = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.5
+var SpectrumLogScale = 2.8
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -57,7 +57,7 @@ function GetVisualBins(Array) {
     var CurMax = Array[CurSpot]
     var Dif = NextSpot - CurSpot
     for (var j = 1; j < Dif; j++) {
-      CurMax = (Array[CurSpot + j] + CurMax)/2
+      CurMax = Math.max(Array[CurSpot + j],CurMax)
     }
     NewArray[i] = CurMax
   }
@@ -67,13 +67,12 @@ function GetVisualBins(Array) {
 }
 
 function TransformToVisualBins(Array) {
-  Array = AverageTransform(Array);
-  Array = tailTransform(Array);
-  Array = exponentialTransform(Array);
+  Array = AverageTransform(Array)
+  Array = tailTransform(Array)
+  Array = exponentialTransform(Array)
 
   return Array;
 }
-
 
 
 function AverageTransform(Array) {
@@ -92,7 +91,7 @@ function AverageTransform(Array) {
             var CurValue = Array[i]
             var NextValue = Array[i + 1]
 
-            Value = (CurValue + (NextValue + PrevValue)/2)/2
+            Value = (CurValue + NextValue + PrevValue)/3
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
