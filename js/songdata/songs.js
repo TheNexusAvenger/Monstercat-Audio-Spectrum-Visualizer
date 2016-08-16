@@ -22,6 +22,8 @@ AddSong("DotEXE","Inside Out","Trap","DotEXE_InsideOut.mp3","img/artists/dotexe.
 
 AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
 
+AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png","needyousingle")
+
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
 
 AddSong("Grant Bowtie","Reach","Future Bass","GrantBowties_Reach.mp3","img/artists/grantbowtie.png","reachsingle")
