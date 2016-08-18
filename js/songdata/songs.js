@@ -26,9 +26,8 @@ AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png"
 
 AddSong("Grabbitz","Better With Time","EDM","Grabbitz_BetterWithTime.mp3","img/artists/grabbitz.png","betterwithtimeep")
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
-
+AddSong("Grabbitz","Friends (feat. Faustix)","Trap","Grabbitz_Friends.mp3","img/artists/grabbitz.png","friendsep")
 AddSong("Grabbitz","Here With You Now","Dubstep","Grabbitz_HereWithYouNow.mp3","img/artists/grabbitz.png","friendsep")
-AddSong("Grabbitz","Friends","Trap","Grabbitz_Friends.mp3","img/artists/grabbitz.png","friendsep")
 AddSong("Grabbitz","Turn Around","Dubstep","Grabbitz_TurnAround.mp3","img/artists/grabbitz.png","friendsep")
 
 AddSong("Grant Bowtie","Reach","Future Bass","GrantBowties_Reach.mp3","img/artists/grantbowtie.png","reachsingle")
@@ -70,7 +69,7 @@ AddSong("Project 46","Reasons<br>(feat. Andrew Allen)","House","Project46_Reason
 
 AddSong("Pegborad Nerds","Bassline Kickin<br>(Astronaut Remix)","Electro","PegboardNerds_BasslineKickinAstronautRemix.mp3","img/artists/pegboardnerds.png","basslinekickintheremixes")
 AddSong("Pegborad Nerds","Bassline Kickin","EDM","PegboardNerds_BasslineKickin.mp3","img/artists/pegboardnerds.png","basslinekickinsingle")
-AddSong("Pegboard Nerds","Blackout","Dubstep","PegboardNerds_Blackout.mp3","img/artists/pegboardnerds.png","monstercat5yearanniversary")
+AddSong("Pegboard Nerds","Blackout","Electro","PegboardNerds_Blackout.mp3","img/artists/pegboardnerds.png","monstercat5yearanniversary")
 AddSong("Pegboard Nerds","Downhearted<br>(feat. Jonny Rose)","Dubstep","PegboardNerds_Downhearted.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Downhearted (feat. Jonny Rose)<br>(Ryos Remix)","Future Bass","PegboardNerds_DownheartedRyosRemix.mp3","img/artists/pegboardnerds.png","pinkcloudtheremixes")
 AddSong("Pegboard Nerds","Emergency","Electro","PegboardNerds_Emergency.mp3","img/artists/pegboardnerds.png","emergencysingle")
