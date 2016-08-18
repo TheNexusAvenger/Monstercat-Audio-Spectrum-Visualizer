@@ -67,6 +67,8 @@ RegisterBackground("pinkcloudep","Album",[["img/backgrounds/pinkcloudbackground1
 RegisterBackground("pinkcloudtheremixes","Album",[["img/backgrounds/pinkcloudbackground1.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground2.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground3.jpg",3840,2160,"rgba(0,0,0,0.5)"]],"#F6B4D9")
 RegisterBackground("thelosttracksep","Album",[["img/backgrounds/thelosttracksbackground.png",1920,1080,"rgba(0,0,0,0)"]],null)
 
+RegisterBackground("Divided VIP","Song",[["img/backgrounds/dividedvipbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+
 RegisterBackground("Lift You Up (feat. EMEL)","Song",[["img/backgrounds/liftyouupbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 RegisterBackground("Who's Got Your Love","Song",[["img/backgrounds/whosgotyourlovebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
