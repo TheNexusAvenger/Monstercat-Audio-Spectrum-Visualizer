@@ -28,6 +28,7 @@ RegisterAlbum("destinationrain","Astronaut - Destination: Rain",["Rain (MitiS Re
 RegisterAlbum("destinationwar","Astronaut & Far Too Loud - Destination: War",["War (Teddy Killerz Remix)","War (F.O.O.L & Didrick Remix)","War (Diskord Remix)","War (The Frederik Remix)","War (Zuko Remix)"])
 
 RegisterAlbum("betterwithtimeep","Grabbitz - Better With Time EP",["Hope (Intro)","Better With Time","Make You Mine","Intermission","Get Out","Float Away","Cold (feat. LAYNE)"])
+RegisterAlbum("friendsep","Grabbitz - Friends EP",["7.6.14 (Intro)","Here With You Now","Friends (feat. Faustix)","Transition (Short)","Turn Around","Way Too Deep","A Walk To The Gallows"])
 
 RegisterAlbum("thisismeep","Hellberg - This Is Me EP",["A Heartbeat Away","The Girl (feat. Cozi Zeuhlsdoff)","Back2You","Wasted Summer (feat. Jessarae)","Love You Now"])
 RegisterAlbum("thegirltheremixes","Hellberg - The Girl (feat. Cozi Zeuhlsdoff) (The Remixes)",["The Girl (feat. Cozi Zeuhlsdoff) (Color Source Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Mr FijiWiji Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Anevo Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Stonebank Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Capital A Remix)"])
