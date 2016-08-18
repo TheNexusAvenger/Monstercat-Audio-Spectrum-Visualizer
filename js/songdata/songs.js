@@ -24,7 +24,12 @@ AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","
 
 AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png","needyousingle")
 
+AddSong("Grabbitz","Better With Time","EDM","Grabbitz_BetterWithTime.mp3","img/artists/grabbitz.png","betterwithtimeep")
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
+
+AddSong("Grabbitz","Here With You Now","Dubstep","Grabbitz_HereWithYouNow.mp3","img/artists/grabbitz.png","friendsep")
+AddSong("Grabbitz","Friends","Trap","Grabbitz_Friends.mp3","img/artists/grabbitz.png","friendsep")
+AddSong("Grabbitz","Turn Around","Dubstep","Grabbitz_TurnAround.mp3","img/artists/grabbitz.png","friendsep")
 
 AddSong("Grant Bowtie","Reach","Future Bass","GrantBowties_Reach.mp3","img/artists/grantbowtie.png","reachsingle")
 
@@ -50,6 +55,8 @@ AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
 
+AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmello.png","alonesingle")
+
 AddSong("Nitro Fun","Cheat Codes","Electro","NitroFun_CheatCodes.mp3","img/artists/nitrofun.png","cheatcodessingle")
 AddSong("Nitro Fun","New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
 AddSong("Nitro Fun","Soldiers","House","NitroFun_Soldiers.mp3","img/artists/nitrofun.png","soldierssingle")
@@ -69,11 +76,11 @@ AddSong("Pegboard Nerds","Downhearted (feat. Jonny Rose)<br>(Ryos Remix)","Futur
 AddSong("Pegboard Nerds","Emergency","Electro","PegboardNerds_Emergency.mp3","img/artists/pegboardnerds.png","emergencysingle")
 AddSong("Pegboard Nerds","Emoji","Future Bass","PegboardNerds_Emoji.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Just Like That<br>(feat. Johnny Graves)","Future Bass","PegboardNerds_JustLikeThat.mp3","img/artists/pegboardnerds.png","pinkcloudep")
-AddSong("Pegborad Nerds","Luigi's Mansion","Dubstep","PegboardNerds_LuigisMansion.mp3","img/artists/pegboardnerds.png","luigismansionsingle")
+AddSong("Pegboard Nerds","Luigi's Mansion","Dubstep","PegboardNerds_LuigisMansion.mp3","img/artists/pegboardnerds.png","luigismansionsingle")
 AddSong("Pegboard Nerds","New Style","EDM","PegboardNerds_NewStyle.mp3","img/artists/pegboardnerds.png","newstylesingle")
 AddSong("Pegboard Nerds","Pink Cloud<br>(feat. Max Collins)","Dubstep","PegboardNerds_PinkCloud.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Revenge Of The Nerds<br>(VIP Mix)","Dubstep","PegboardNerds_RevengeOfTheNerdsVIPMix.mp3","img/artists/pegboardnerds.png","thelosttracksep")
-AddSong("Pegboard Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
+AddSong("Pegborad Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
 AddSong("Pegboard Nerds","Swamp Thing","EDM","PegboardNerds_SwampThing.mp3","img/artists/pegboardnerds.png","swampthingsingle")
 AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/artists/pegboardnerds.png","trythissingle")
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
@@ -91,6 +98,9 @@ AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.
 AddSong("Rogue","Through The Dark","Electro","Rogue_ThroughTheDark.mp3","img/artists/rogue.png","earthep")
 
 AddSong("SCNDL","The Munsta<br>(AlphavibeZ Remix)","Hard Dance","SCNDL_TheMunstaAlphavibeZRemix.mp3","img/artists/scndl.png","themunstatheremixesep")
+
+AddSong("Slips & Slurs","Divided","Trap","SlipsAndSlurs_Divided.mp3","img/artists/slipsandslurs.png","dividedsingle")
+AddSong("Slips & Slurs","Divided VIP","Trap","SlipsAndSlurs_DividedVIP.mp3","img/artists/slipsandslurs.png","monstercat5yearanniversary")
 
 AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight.mp3","img/artists/stonebank.png","allnightsingle")
 AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlright.mp3","img/artists/stonebank.png","bealrightsingle")
