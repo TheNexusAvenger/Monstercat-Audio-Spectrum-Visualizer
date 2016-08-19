@@ -142,6 +142,7 @@ p.ArtistName {
   font-weight: 700;
   height:50%;
   letter-spacing: -5.3px;
+  line-height: 96%;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px #000000;
 }
