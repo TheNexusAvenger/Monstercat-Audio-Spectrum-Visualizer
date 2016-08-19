@@ -25,7 +25,7 @@ var Bar1080pWidth = 15
 var Bar1080pSeperation = 7
 var BarHeightToWidthRatio = 22
 var LogoSpacing = 25
-var LogoSize = 150
+var LogoSize = (Bar1080pWidth * 8) + (Bar1080pSeperation * 7)
 
 var WidthBoundArea = 0.8
 var HeightBoundArea = 0.8
