@@ -124,8 +124,8 @@ function RemoveNewLines(String) {
 function AddSong(ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName){
   if (RemoveNewLines(SongName).toLowerCase().match(SongNameSearch) != null) {
     if (RemoveNewLines(ArtistName).toLowerCase().match(ArtistNameSearch) != null) {
-    	if (RemoveNewLines(GenreName).toLowerCase().match(GenreNameSearch) != null) {
- 	       Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
+      if (RemoveNewLines(GenreName).toLowerCase().match(GenreNameSearch) != null) {
+	       Songs[Songs.length] = [ArtistName,SongName,GenreName,FileLocation,ArtistFile,AlbumName]
        }
     }
   }
@@ -191,18 +191,21 @@ function PlayRandomSong(){
   ArtistName = SongData[0]
 	SongName = SongData[1]
   SingleLineSongName = RemoveNewLines(SongName)
+  var SingleLineArtistName = RemoveNewLines(ArtistName)
 	GenreName =	SongData[2]
 	var FileName = "songs/" + SongData[3]
   var ArtistLogo = SongData[4]
   var Album = SongData[5]
 
+  var ArtistLineCount = GetLineCount(ArtistName) + 1
   var SongLineCount = GetLineCount(SongName) + 1
   var SongNameLines = SongLineCount * SongNameSizeRatio
-  ArtistNameActualRatio = SongTextSize / (1 + SongNameLines)
-  SongNameActualRatio = (SongTextSize * SongNameSizeRatio) / (1 + SongNameLines)
-  var SongTextSizeRatio = (SongTextSize * SongNameSizeRatio * SongNameLines) / (1 + SongNameLines)
+  ArtistNameActualRatio = (SongTextSize) / (ArtistLineCount + SongNameLines)
+  SongNameActualRatio = (SongTextSize * SongNameSizeRatio) / (ArtistLineCount + SongNameLines)
+  var SongTextSizeRatio = (SongTextSize * SongNameSizeRatio * SongNameLines) / (ArtistLineCount + SongNameLines)
+  var AristTextSizeRatio = (SongTextSize * ArtistLineCount) / (ArtistLineCount + SongNameLines)
   var FromTop = (1 - SongTextSize)/2  * 100
-  var ArtistHeight = Math.floor(ArtistNameActualRatio * 100)
+  var ArtistHeight = Math.floor(AristTextSizeRatio * 100)
   ArtistText.style.top = FromTop + "%"
   ArtistText.style.height = ArtistHeight + "%"
   SongNameText.style.top = (ArtistHeight + FromTop) + "%"
@@ -258,7 +261,7 @@ function PlayRandomSong(){
   MainDiv.style.display = "none"
   LoadingDiv.style.display = "block"
   document.title = "Loading..."
-  LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + ArtistName + " - " + SingleLineSongName
+  LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + SingleLineArtistName + " - " + SingleLineSongName
 
   if (IndluceFileMetadata == true) {
     CompiledSongData = CompiledSongData + "\n\tArtistName = \"" + ArtistName + "\","
