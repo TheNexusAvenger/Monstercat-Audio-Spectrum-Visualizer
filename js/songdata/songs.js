@@ -26,7 +26,7 @@ AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png"
 
 AddSong("Grabbitz","Better With Time","EDM","Grabbitz_BetterWithTime.mp3","img/artists/grabbitz.png","betterwithtimeep")
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
-AddSong("Grabbitz","Friends (feat. Faustix)","Trap","Grabbitz_Friends.mp3","img/artists/grabbitz.png","friendsep")
+AddSong("Grabbitz","Friends<br>(feat. Faustix)","Trap","Grabbitz_Friends.mp3","img/artists/grabbitz.png","friendsep")
 AddSong("Grabbitz","Here With You Now","Dubstep","Grabbitz_HereWithYouNow.mp3","img/artists/grabbitz.png","friendsep")
 AddSong("Grabbitz","Turn Around","Dubstep","Grabbitz_TurnAround.mp3","img/artists/grabbitz.png","friendsep")
 
