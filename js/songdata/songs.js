@@ -20,11 +20,16 @@ AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro",
 
 AddSong("Botnek & I See MONSTAS","Deeper Love","Drum & Bass","BotnekAndISeeMONSTAS_DeeperLove.mp3","img/artists/botnek.png","deeperlovesingle")
 
+AddSong("Case & Point","Fugitive","Electro","CaseAndPoint_Fugitive.mp3","img/artists/caseandpoint.png","fugitivesingle")
+AddSong("Case & Point","Upgrade","Electro","CaseAndPoint_Upgrade.mp3","img/artists/caseandpoint.png","upgradeep")
+
 AddSong("DotEXE","Inside Out","Trap","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
 
 AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
 
 AddSong("Droptek &<br>Tut Tut Child","Drop That Child","Dubstep","DroptekAndTutTutChild_DropThatChild.mp3","img/artists/tuttutchild.png","dropthatchildsingle")
+
+AddSong("Ephixa & Stephen Walking","Matches<br>(feat. Aaron Richards)","Indie Dance","EphixaAndStephenWalking_Matches.mp3","img/artists/ephixa.png","monstercat5yearanniversary")
 
 AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png","needyousingle")
 
@@ -56,14 +61,17 @@ AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/k
 AddSong("Laszlo","Home","Progressive House","Laszlo_Home.mp3","img/artists/laszlo.png","homesingle")
 AddSong("Laszlo","Interstellar","Progressive House","Laszlo_Interstellar.mp3","img/artists/laszlo.png","interstellarsingle")
 AddSong("Laszlo","Supernova","Electro","Laszlo_Supernova.mp3","img/artists/laszlo.png","supernovasingle")
+AddSong("Laszlo","Tribal","House","Laszlo_Tribal.mp3","img/artists/laszlo.png","monstercat5yearanniversary")
 
 AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/letsbefriends.png","ftwsingle")
 AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","LetsBeFriends_ManslaughterVipMix.mp3","img/artists/letsbefriends.png","monstercat014discovery")
 
+AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmello.png","alonesingle")
+
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
 
-AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmello.png","alonesingle")
+AddSong("Muzzy","Crescendo<br>(feat. MYLK)","Drum & Bass","Muzzy_Crescendo.mp3","img/artists/muzzy.png","monstercat5yearanniversary")
 
 AddSong("Nitro Fun","Cheat Codes","Electro","NitroFun_CheatCodes.mp3","img/artists/nitrofun.png","cheatcodessingle")
 AddSong("Nitro Fun & Hyper Potions","Checkpoint","Electro","NitroFunAndHyperPotions_Checkpoint.mp3","img/artists/nitrofun.png","checkpointsingle")
@@ -76,6 +84,7 @@ AddSong("Noisestorm","Heist","Trap","Noisestorm_Heist.mp3","img/artists/noisesto
 AddSong("Noisestorm","Leaving Now","Drum & Bass","Noisestorm_LeavingNow.mp3","img/artists/noisestorm.png","leavingnowsingle")
 AddSong("Noisestorm","Sentinel","Breaks","Noisestorm_Sentinel.mp3","img/artists/noisestorm.png","sentinelsingle")
 AddSong("Noisestorm","Surge","Electro","Noisestorm_Surge.mp3","img/artists/noisestorm.png","surgesingle")
+AddSong("Noisestorm","This Feeling","Electro","Noisestorm_ThisFeeling.mp3","img/artists/noisestorm.png","monstercat5yearanniversary")
 
 AddSong("Project 46","No One<br>(feat. Matthew Steeper)","Progressive House","Project46_NoOne.mp3","img/artists/project46.png","monstercat012aftermath")
 AddSong("Project 46","Reasons<br>(feat. Andrew Allen)","House","Project46_Reasons.mp3","img/artists/project46.png","reasonssingle")
@@ -116,6 +125,8 @@ AddSong("Razihel","Children Of The Night","Bounce","Razihel_ChildrenOfTheNight.m
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
 AddSong("Razihel","Legends<br>(Zatox Remix)","Hard Dance","Razihel_LegendsZatoxRemix.mp3","img/artists/razihel.png","legendszatoxremixsingle")
 
+AddSong("Richard Caddock, WRLD, Nitro Fun,<br> Slips & Slurs & Subtact","Break The Silence","Future Bass","RichardCaddockWRLDNitroFunSlipsAndSlursSubtact_BreakTheSilence.mp3","img/artists/richardcaddock.png","monstercat5yearanniversary")
+
 AddSong("Rootkit","Against The Sun<br>(feat. Anna Yvette)","Drumstep","Rootkit_AgainstTheSun.mp3","img/artists/rootkit.png","againstthesunsingle")
 AddSong("Rootkit","Real Love<br>(feat. Danyka Nadeau)","Future House","Rootkit_RealLove.mp3","img/artists/rootkit.png","reallovesingle")
 
@@ -124,6 +135,7 @@ AddSong("Rogue","Atlantic","Electro","Rogue_Atlantic.mp3","img/artists/rogue.png
 AddSong("Rogue","Dreams<br>(feat. Laura Brehm)","Drumstep","Rogue_Dreams.mp3","img/artists/rogue.png","dreamsep")
 AddSong("Rogue","Drive Away","EDM","Rogue_DriveAway.mp3","img/artists/rogue.png","driveawaysingle")
 AddSong("Rogue","From The Dust","Drumstep","Rogue_FromTheDust.mp3","img/artists/rogue.png","earthep")
+AddSong("Rogue","Imperfect Views","EDM","Rogue_ImperfectViews.mp3","img/artists/rogue.png","monstercat5yearanniversary")
 AddSong("Rogue","Moments<br>(feat. Meg Dean)","House","Rogue_Moments.mp3","img/artists/rogue.png","dreamsep")
 AddSong("Rogue","Nightfall","Glitch Hop Or 110 BPM","Rogue_Nightfall.mp3","img/artists/rogue.png","monstercat012aftermath")
 AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.png","rattlesnakesingle")
@@ -133,6 +145,7 @@ AddSong("SCNDL","The Munsta<br>(AlphavibeZ Remix)","Hard Dance","SCNDL_TheMunsta
 
 AddSong("Slips & Slurs","Divided","Trap","SlipsAndSlurs_Divided.mp3","img/artists/slipsandslurs.png","dividedsingle")
 AddSong("Slips & Slurs","Divided VIP","Trap","SlipsAndSlurs_DividedVIP.mp3","img/artists/slipsandslurs.png","monstercat5yearanniversary")
+AddSong("Slips & Slurs","Malicious","EDM","SlipsAndSlurs_Malicious.mp3","img/artists/slipsandslurs.png","malicioussingle")
 
 AddSong("Stonebank","All Night<br>(feat. EMEL)","Hard Dance","Stonebank_AllNight.mp3","img/artists/stonebank.png","allnightsingle")
 AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlright.mp3","img/artists/stonebank.png","bealrightsingle")
@@ -145,6 +158,7 @@ AddSong("Summer Was Fun","Pick Up The Phone","Indie Dance","SummerWasFun_PickUpT
 AddSong("Summer Was Fun","Run To You<br>(feat. Meron Ryan)","House","SummerWasFun_RunToYou.mp3","img/artists/summerwasfun.png","runtoyousingle")
 AddSong("Summer Was Fun","Watching<br>(feat. Colordrive)","Indie Dance","SummerWasFun_Watching.mp3","img/artists/summerwasfun.png","watchingsingle")
 
+AddSong("Tristam","Before We Fade","EDM","Tristam_BeforeWeFade.mp3","img/artists/tristam.png","monstercat5yearanniversary")
 AddSong("Tristam","Crave","Electro House","Tristam_Crave.mp3","img/artists/tristam.png","cravesingle")
 AddSong("Tristam & Braken","Flight","Drumstep","TristamAndBraken_Flight.mp3","img/artists/tristam.png","monstercat012aftermath")
 AddSong("Tristam & Braken","Frame Of Mind","Drum & Bass","TristamAndBraken_FrameOfMind.mp3","img/artists/tristam.png","frameofmindsingle")
