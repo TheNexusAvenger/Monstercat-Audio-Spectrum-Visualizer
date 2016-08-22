@@ -28,7 +28,7 @@ RegisterAlbum("destinationrain","Astronaut - Destination: Rain",["Rain (MitiS Re
 RegisterAlbum("destinationwar","Astronaut & Far Too Loud - Destination: War",["War (Teddy Killerz Remix)","War (F.O.O.L & Didrick Remix)","War (Diskord Remix)","War (The Frederik Remix)","War (Zuko Remix)"])
 
 RegisterAlbum("feelingsep","F.O.O.L - Feelings EP",["Feelings","Invaders","Warriors","Feed Us","Get Down","Feelings (Lets Be Friends Remix)","Feelings (Anzo Remix)","Feelings (Chimeric Remix)","Feelings (Falcon Funk Remix)"])
-RegisterAlbum("knightep","F.O.O.L - Knigh EP",["Knight","Bounty Hunter","Fairytaler","Distorted Reality"])
+RegisterAlbum("knightep","F.O.O.L - Knight EP",["Knight","Bounty Hunter","Fairytaler","Distorted Reality"])
 
 RegisterAlbum("betterwithtimeep","Grabbitz - Better With Time EP",["Hope (Intro)","Better With Time","Make You Mine","Intermission","Get Out","Float Away","Cold (feat. LAYNE)"])
 RegisterAlbum("friendsep","Grabbitz - Friends EP",["7.6.14 (Intro)","Here With You Now","Friends (feat. Faustix)","Transition (Short)","Turn Around","Way Too Deep","A Walk To The Gallows"])
