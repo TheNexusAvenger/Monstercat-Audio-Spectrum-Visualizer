@@ -31,7 +31,13 @@ AddSong("Droptek &<br>Tut Tut Child","Drop That Child","Dubstep","DroptekAndTutT
 
 AddSong("Ephixa & Stephen Walking","Matches<br>(feat. Aaron Richards)","Indie Dance","EphixaAndStephenWalking_Matches.mp3","img/artists/ephixa.png","monstercat5yearanniversary")
 
+AddSong("F.O.O.L","Fairytaler","Dubstep","FOOL_Fairytaler.mp3","img/artists/fool.png","knightep")
+AddSong("F.O.O.L","Feelings<br>(Lets Be Friends Remix)","Electro","FOOL_FeelingsLetsBeFriendsRemix.mp3","img/artists/fool.png","feelingsep")
+AddSong("F.O.O.L","Get Down","Electro","FOOL_GetDown.mp3","img/artists/fool.png","feelingsep")
+AddSong("F.O.O.L","Keep On Rocking","Electro","FOOL_KeepOnRocking.mp3","img/artists/fool.png","keeponrockingsingle")
 AddSong("F.O.O.L","Need You","Electro","FOOL_NeedYou.mp3","img/artists/fool.png","needyousingle")
+AddSong("F.O.O.L","Showdown","Electro","FOOL_Showdown.mp3","img/artists/fool.png","showdownsingle")
+AddSong("F.O.O.L","Throne","Electro","FOOL_Throne.mp3","img/artists/fool.png","thronesingle")
 
 AddSong("Grabbitz","Better With Time","EDM","Grabbitz_BetterWithTime.mp3","img/artists/grabbitz.png","betterwithtimeep")
 AddSong("Grabbitz","Float Away","Indie Dance","Grabbitz_FloatAway.mp3","img/artists/grabbitz.png","betterwithtimeep")
