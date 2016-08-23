@@ -228,36 +228,53 @@ function PlayRandomSong(){
     DownloadSongData = false
   }
 
+  RevertCustomBackgroundChanges()
+
   var SongBackgroundOverride = SongBackgrounds[SingleLineSongName]
   var AlbumBackgroundOverride = AlbumBackgrounds[Album]
   var ArtistBackgroundOverride = ArtistBackgrounds[ArtistName]
 
-
   var FullBackgroundData
   if (SongBackgroundOverride) {
-    FullBackgroundData = SongBackgroundOverride
+    if (SongBackgroundOverride[0]) {
+      FullBackgroundData = SongBackgroundOverride[0]
+    }
+    if (SongBackgroundOverride[1]) {
+      GenreColor = SongBackgroundOverride[1]
+    }
+    if (SongBackgroundOverride[2]) {
+      SongBackgroundOverride[2]()
+    }
   } else if (AlbumBackgroundOverride) {
-    FullBackgroundData = AlbumBackgroundOverride
+    if (AlbumBackgroundOverride[0]) {
+      FullBackgroundData = AlbumBackgroundOverride[0]
+    }
+    if (AlbumBackgroundOverride[1]) {
+      GenreColor = AlbumBackgroundOverride[1]
+    }
+    if (AlbumBackgroundOverride[2]) {
+      AlbumBackgroundOverride[2]()
+    }
   } else if (ArtistBackgroundOverride) {
-    FullBackgroundData = ArtistBackgroundOverride
+    if (ArtistBackgroundOverride[0]) {
+      FullBackgroundData = ArtistBackgroundOverride[0]
+    }
+    if (ArtistBackgroundOverride[1]) {
+      GenreColor = ArtistBackgroundOverride[1]
+    }
+    if (ArtistBackgroundOverride[2]) {
+      ArtistBackgroundOverride[2]()
+    }
   }
 
-  RevertCustomBackgroundChanges()
+
   if (FullBackgroundData) {
     DrawParticles = false
-    var BackgroundData = FullBackgroundData[0][Math.floor(Math.random() * FullBackgroundData[0].length)]
+    var BackgroundData = FullBackgroundData[Math.floor(Math.random() * FullBackgroundData.length)]
     BackgroundImage.src = BackgroundData[0]
     BackgroundWidth = BackgroundData[1]
     BackgroundHeight = BackgroundData[2]
     ColorBackground.style.backgroundColor = BackgroundData[3]
-
-    if (FullBackgroundData[1]) {
-      GenreColor = FullBackgroundData[1]
-    }
-
-    if (FullBackgroundData[2]) {
-      FullBackgroundData[2]()
-    }
   } else {
     DrawParticles = true
     BackgroundImage.src = "img/blankpixel.png"
