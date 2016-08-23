@@ -57,7 +57,7 @@ function KarmaFieldsEnvironmentChanges() {
 
 function PureWhiteEnvironmentChanges() {
   MonstercatLogo.style["-webkit-filter"] = "invert(100%)"
-  ChangedEnvironments[0] =  "MonstercatColorFilter"
+  ChangedEnvironments[0] =  "MonstercatLogo"
 }
 
 RegisterBackground("Matches (feat. Aaron Richards)","Song",[["img/backgrounds/matchesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
