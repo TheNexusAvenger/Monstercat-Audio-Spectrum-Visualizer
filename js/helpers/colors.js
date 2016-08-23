@@ -31,7 +31,7 @@ var OtherColors = {
     'Bounce': 'Electro House',
     'Complextro': 'Electro House',
     'Outrun': 'Electro House',
-    
+
     'Bounce': 'Electro',
 
     'Electro Swing': 'House',
@@ -70,10 +70,14 @@ for (var Key in OtherColors) {
 }
 
 function GetColorFromGenre(Genre) {
-  Genre = Genre.toLowerCase()
-  for (var Key in MainColors) {
-    if (Genre.indexOf(Key.toLowerCase()) != -1) {
-      return MainColors[Key]
+  if (Genre != null) {
+    Genre = Genre.toLowerCase()
+    for (var Key in MainColors) {
+      if (Genre.indexOf(Key.toLowerCase()) != -1) {
+        return MainColors[Key]
+      }
     }
   }
+
+  return MainColors["EDM"]
 }
