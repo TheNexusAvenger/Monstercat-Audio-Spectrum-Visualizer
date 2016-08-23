@@ -75,18 +75,20 @@ function LoadSound(Url,ArtistLogo,Album) {
           LoadingDiv.style.display = "none"
 
           var AlbumImageLink = "img/albums/" + Album +".png"
-          Preload("img/monstercatlogo.png")
-          Preload(ArtistLogo)
-
-
+          Preload(MonstercatLogo.innerHTML)
           AlbumRotations[0] = [0.5*1000,"Open"]
-          AlbumRotations[1] = [15*1000,"Turn",ArtistLogo]
+          if (ArtistLogo != null) {
+            Preload(ArtistLogo)
+            AlbumRotations[AlbumRotations.length] = [15*1000,"Turn",ArtistLogo]
+          }
           if (AlbumImageLink != undefined) {
             Preload(AlbumImageLink)
-            AlbumRotations[2] = [30*1000,"Turn",AlbumImageLink]
-            AlbumRotations[3] = [TimeLength - (30*1000),"Turn",ArtistLogo]
+            AlbumRotations[AlbumRotations.length] = [30*1000,"Turn",AlbumImageLink]
+            AlbumRotations[AlbumRotations.length] = [TimeLength - (30*1000),"Turn",ArtistLogo]
           }
-          AlbumRotations[AlbumRotations.length] = [TimeLength - (15*1000),"Turn"]
+          if (ArtistLogo != null) {
+            AlbumRotations[AlbumRotations.length] = [TimeLength - (15*1000),"Turn"]
+          }
           AlbumRotations[AlbumRotations.length] = [TimeLength - (0.5*1000),"Close"]
 
           var AlbumData = Albums[Album]
@@ -99,7 +101,11 @@ function LoadSound(Url,ArtistLogo,Album) {
           }
           TextCycles[TextCycles.length] = [TimeLength - 1000,"Close"]
 
-          document.title = "[" + GenreName + "] " + ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+          if (GenreName != "") {
+            document.title = "[" + GenreName + "] " + ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+          } else {
+            document.title = ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+          }
         	Source.start(0)
       }, function(Message){
         console.log(Message)
@@ -261,7 +267,11 @@ function PlayRandomSong(){
   MainDiv.style.display = "none"
   LoadingDiv.style.display = "block"
   document.title = "Loading..."
-  LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + SingleLineArtistName + " - " + SingleLineSongName
+  if (GenreName != "") {
+    LoadingText.innerHTML = "Loading...<br>[" + GenreName + "] " + SingleLineArtistName + " - " + SingleLineSongName
+  } else {
+    LoadingText.innerHTML = "Loading...<br>" + SingleLineArtistName + " - " + SingleLineSongName
+  }
 
   if (IndluceFileMetadata == true) {
     CompiledSongData = CompiledSongData + "\n\tArtistName = \"" + ArtistName + "\","
