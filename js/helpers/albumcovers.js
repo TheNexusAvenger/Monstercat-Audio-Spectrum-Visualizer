@@ -3,9 +3,11 @@ var SetLastAlbumText = false
 var CoverSpinSpeed = 200
 var TextSpinSpeed = 500
 
+var CurrentLogo = "img/monstercatlogo.png"
 function ResetToMonstercatLogo() {
   AlbumImage.src = "img/blankpixel.png"
-  MonstercatLogo.src = "img/monstercatlogo.png"
+  console.log(CurrentLogo)
+  MonstercatLogo.src = CurrentLogo
 }
 
 function SetToCover(Image) {
@@ -33,6 +35,7 @@ function UpdateAlbumCover(CurrentTime,NewLogoSize) {
       MonstercatLogo.style.width = LogoSizeWidth*0.7 + "px"
       MonstercatLogo.style.left = (NewLogoSize - LogoSizeWidth)/2 + NewLogoSize*0.15*LogoRatio + "px"
     }
+
     if (CurrentTime > Time && SetLastAlbumImage == false) {
       SetLastAlbumImage = true
       if (Cover != null) {
