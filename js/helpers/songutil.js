@@ -219,8 +219,7 @@ function PlayRandomSong(){
 
   ArtistText.innerHTML = ArtistName
   SongNameText.innerHTML = SongName
-	GenreColor = GetColorFromGenre(GenreName)
-  CreateNewFleck()
+  GenreColor = GetColorFromGenre(GenreName)
 
   if (EncodeEnabledByDefault == true) {
     DownloadSongData = true
@@ -304,7 +303,8 @@ function PlayRandomSong(){
   AlbumRotations = []
   NextTextCycle = 0
   TextCycles = []
-	LoadSound(FileName,ArtistLogo,Album)
+  LoadSound(FileName,ArtistLogo,Album)
+  CreateNewFleck()
 }
 
 function ForceStop() {
