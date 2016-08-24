@@ -26,6 +26,7 @@ var ArtistName = ""
 var SongName = ""
 var GenreName = ""
 var SingleLineSongName = ""
+var SingleLineArtistName = ""
 var CompiledSongData = "return {"
 
 var BackgroundWidth = 0
@@ -37,6 +38,7 @@ var ArtistNameActualRatio = 0
 var SongNameActualRatio = 0
 
 var Albums = []
+var LPSongNames = []
 var AlbumBackgrounds = []
 var SongBackgrounds = []
 var ArtistBackgrounds = []
@@ -92,19 +94,36 @@ function LoadSound(Url,ArtistLogo,Album) {
           AlbumRotations[AlbumRotations.length] = [TimeLength - (0.5*1000),"Close"]
 
           var AlbumData = Albums[Album]
-          TextCycles[0] = [1000,"Open"]
-          if (AlbumData != undefined) {
+          var LPSongNameData = LPSongNames[SongName]
+
+          if (LPSongNameData != null) {
+            var StartSong = LPSongNameData[0]
+            if (StartSong != null && StartSong[0] == 0) {
+              TextCycles[0] = [1000,"Open","Song",StartSong[1],StartSong[2]]
+            } else {
+              TextCycles[0] = [1000,"Open","Song",ArtistName,SongName]
+            }
+          } else {
+            TextCycles[0] = [1000,"Open","Song",ArtistName,SongName]
+          }
+
+          if (LPSongNameData != null) {
+            for (var i = 0;i < LPSongNameData.length; i++) {
+              var CurrentSong = LPSongNameData[i]
+              TextCycles[TextCycles.length] = [CurrentSong[0],"Change","Song",CurrentSong[1],CurrentSong[2]]
+            }
+          } else if (AlbumData != undefined) {
             var TimeDivision = TimeLength * (1/(AlbumData[1].length + 1))
             for (var i = 0;i < AlbumData[1].length; i++) {
-                TextCycles[TextCycles.length] = [TimeDivision * (i + 1),"Change",AlbumData[0],AlbumData[1][i]]
+              TextCycles[TextCycles.length] = [TimeDivision * (i + 1),"Change","Album",AlbumData[0],AlbumData[1][i]]
             }
           }
           TextCycles[TextCycles.length] = [TimeLength - 1000,"Close"]
 
           if (GenreName != "") {
-            document.title = "[" + GenreName + "] " + ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+            document.title = "[" + GenreName + "] " + SingleLineArtistName + " - " + SingleLineSongName
           } else {
-            document.title = ArtistName + " - " + SongName.replace("<br>"," ").replace("<br/>"," ")
+            document.title = SingleLineArtistName + " - " + SingleLineSongName
           }
         	Source.start(0)
       }, function(Message){
@@ -169,24 +188,6 @@ function GetRandomTableOfNumbers(Numbers) {
 	return Table
 }
 
-function GetLineCount(String) {
-	String = String.toLowerCase().replace("<br/>","<br>")
-	var Count = 0
-	var Done = false
-	var StringLeft = String
-	while (Done == false) {
-		var Match = StringLeft.match("<br>")
-		if (Match) {
-			var Index = Match.index
-			StringLeft  = StringLeft .substring(Index + 4)
-			Count++
-		} else {
-			Done = true
-		}
-	}
-	return Count
-}
-
 function PlayRandomSong(){
   SongSpot++
   if (SongSpot > Songs.length - 1) {
@@ -197,29 +198,14 @@ function PlayRandomSong(){
   ArtistName = SongData[0]
 	SongName = SongData[1]
   SingleLineSongName = RemoveNewLines(SongName)
-  var SingleLineArtistName = RemoveNewLines(ArtistName)
+  SingleLineArtistName = RemoveNewLines(ArtistName)
 	GenreName =	SongData[2]
 	var FileName = "songs/" + SongData[3]
   var ArtistLogo = SongData[4]
   var Album = SongData[5]
 
-  var ArtistLineCount = GetLineCount(ArtistName) + 1
-  var SongLineCount = GetLineCount(SongName) + 1
-  var SongNameLines = SongLineCount * SongNameSizeRatio
-  ArtistNameActualRatio = (SongTextSize) / (ArtistLineCount + SongNameLines)
-  SongNameActualRatio = (SongTextSize * SongNameSizeRatio) / (ArtistLineCount + SongNameLines)
-  var SongTextSizeRatio = (SongTextSize * SongNameSizeRatio * SongNameLines) / (ArtistLineCount + SongNameLines)
-  var AristTextSizeRatio = (SongTextSize * ArtistLineCount) / (ArtistLineCount + SongNameLines)
-  var FromTop = (1 - SongTextSize)/2  * 100
-  var ArtistHeight = Math.floor(AristTextSizeRatio * 100)
-  ArtistText.style.top = FromTop + "%"
-  ArtistText.style.height = ArtistHeight + "%"
-  SongNameText.style.top = (ArtistHeight + FromTop) + "%"
-  SongNameText.style.height = Math.floor(SongTextSizeRatio * 100) + "%"
 
-  ArtistText.innerHTML = ArtistName
-  SongNameText.innerHTML = SongName
-  GenreColor = GetColorFromGenre(GenreName)
+	GenreColor = GetColorFromGenre(GenreName)
 
   if (EncodeEnabledByDefault == true) {
     DownloadSongData = true
@@ -303,7 +289,7 @@ function PlayRandomSong(){
   AlbumRotations = []
   NextTextCycle = 0
   TextCycles = []
-  LoadSound(FileName,ArtistLogo,Album)
+	LoadSound(FileName,ArtistLogo,Album)
   CreateNewFleck()
 }
 
