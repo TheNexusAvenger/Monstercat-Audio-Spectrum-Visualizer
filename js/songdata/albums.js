@@ -1,90 +1,54 @@
-function ChangeTextColor(Color){
-  ArtistText.style.color = Color
-  SongNameText.style.color = Color
-  LeftText.style.color = Color
-  RightText.style.color = Color
-  LoadingText.style.color = Color
-  AlbumTitleText.style.color = Color
-  AlbumSongTitle1Text.style.color = Color
-  AlbumSongTitle2Text.style.color = Color
-  AlbumSongTitle3Text.style.color = Color
-  Link1.style.color = Color
-  Link2.style.color = Color
-  DefaultTextColor = Color
-}
+function RegisterAlbum(ReferenceName,Name,Songs) {
+  var AlbumSongs = []
+  for (var i = 0; i < Songs.length; i = i + 3) {
+    var SongsTable = []
+    var Song1 = Songs[i]
+    var Song2 = Songs[i + 1]
+    var Song3 = Songs[i + 2]
 
-function RevertCustomBackgroundChanges() {
-  for (var i = 0; i < ChangedEnvironments.length; i++) {
-    var Changed = ChangedEnvironments[i]
-    if (Changed == "TextColor") {
-      ChangeTextColor("#FFFFFF")
-    } else if (Changed == "ShadowBlur") {
-      ShadowBlur = BaseEnvironments["ShadowBlur"]
-    } else if (Changed == "BackgroundShadows") {
-      ColorBackground.style["box-shadow"] = "none"
-    } else if (Changed == "MonstercatLogo") {
-      MonstercatLogo.style["-webkit-filter"] = "none"
-      MonstercatLogo.innerHTML = "img/monstercatlogo.png"
+    if (Song1 != null) {
+      SongsTable[0] = [i+1,Song1]
     }
+    if (Song2 != null) {
+      SongsTable[1] = [i+2,Song2]
+    }
+    if (Song3 != null) {
+      SongsTable[2] = [i+3,Song3]
+    }
+
+    AlbumSongs[AlbumSongs.length] = SongsTable
   }
-  ChangedEnvironments = []
+  Albums[ReferenceName] = [Name,AlbumSongs]
 }
 
-function RegisterBackground(Name,Type,Backgrounds,Color,ChangeFunction) {
-  if (Type == "Album") {
-    AlbumBackgrounds[Name] = [Backgrounds,Color,ChangeFunction]
-  } else if (Type == "Artist") {
-    ArtistBackgrounds[Name] = [Backgrounds,Color,ChangeFunction]
-  } else {
-    SongBackgrounds[Name] = [Backgrounds,Color,ChangeFunction]
-  }
-}
+RegisterAlbum("apolloep","Astronaut - Apollo EP",["Apollo (Electro Mix)","Apollo (Radio Edit)","Pinball","Space Jam","13","Apollo (Dodge & Fuski Remix)","Apollo (Instrumental Electro Mix)","Apollo (Instrumental Radio Edit)"])
+RegisterAlbum("quantumep","Astronaut - Quantum EP",["Quantum","Rain"])
+RegisterAlbum("destinationquantum","Astronaut - Destination: Quantum",["Quantum (Virtual Riot Remix)","Quantum (Hellberg Remix)","Quantum (Spag Heddy Remix)","Quantum (Dilemn Remix)","Quantum (Cutline Remix)"])
+RegisterAlbum("destinationrain","Astronaut - Destination: Rain",["Rain (MitiS Remix)","Rain (Calvertron Remix)","Rain (Stephen Walking Remix)","Rain (Raise Spirit Remix)","Rain (Centron Remix)","Rain (Dflent Remix)"])
+RegisterAlbum("destinationwar","Astronaut & Far Too Loud - Destination: War",["War (Teddy Killerz Remix)","War (F.O.O.L & Didrick Remix)","War (Diskord Remix)","War (The Frederik Remix)","War (Zuko Remix)"])
 
+RegisterAlbum("feelingsep","F.O.O.L - Feelings EP",["Feelings","Invaders","Warriors","Feed Us","Get Down","Feelings (Lets Be Friends Remix)","Feelings (Anzo Remix)","Feelings (Chimeric Remix)","Feelings (Falcon Funk Remix)"])
+RegisterAlbum("knightep","F.O.O.L - Knight EP",["Knight","Bounty Hunter","Fairytaler","Distorted Reality"])
 
+RegisterAlbum("betterwithtimeep","Grabbitz - Better With Time EP",["Hope (Intro)","Better With Time","Make You Mine","Intermission","Get Out","Float Away","Cold (feat. LAYNE)"])
+RegisterAlbum("friendsep","Grabbitz - Friends EP",["7.6.14 (Intro)","Here With You Now","Friends (feat. Faustix)","Transition (Short)","Turn Around","Way Too Deep","A Walk To The Gallows"])
 
+RegisterAlbum("thisismeep","Hellberg - This Is Me EP",["A Heartbeat Away","The Girl (feat. Cozi Zeuhlsdoff)","Back2You","Wasted Summer (feat. Jessarae)","Love You Now"])
+RegisterAlbum("thegirltheremixes","Hellberg - The Girl (feat. Cozi Zeuhlsdoff) (The Remixes)",["The Girl (feat. Cozi Zeuhlsdoff) (Color Source Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Mr FijiWiji Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Anevo Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Stonebank Remix)","The Girl (feat. Cozi Zeuhlsdoff) (Capital A Remix)"])
 
+RegisterAlbum("newagedarkage","Karma Fields - New Age Dark Age",["Edge Of The World","Stickup (feat. Juliette Lewis)","For Me","Skyline","Fixed_","Greatness (feat. Talib Kweli)","Scandal (feat. C.C. Sheffield)","Build The Cities (feat. Kerli)","Skewed","Faint Echoes (feat. Monarchy)","A Bright But Distant Future","Build The Cities + (feat. Kerli)"])
+RegisterAlbum("buildthecitiesreconstructions","Karma Fields - Build The Cities (feat. Kerli) (Reconstructions)",["Build The Cities (feat. Kerli) (Empire Of Sound)","Build The Cities (feat. Kerli) (Grabbitz Remix)","Build The Cities (feat. Kerli) (Project 46 Remix)","Build The Cities (feat. Kerli) (Kastle Remix)","Build The Cities (feat. Kerli) (AC Slater Remix)","Build The Cities (feat. Kerli) (Rootkit Remix)","Build The Cities (feat. Kerli) (Redial Remix)"])
 
+RegisterAlbum("monstercat5yearanniversary","Monstercat - Monstercat 5 Year Anniversary",["Matches (feat. Aaron Richards)","Lift You Up (feat. EMEL)","Blackout","Divided VIP","Imperfect Views","This Feeling","Tribal","Break The Silence","Crescendo (feat. MLYK)","Before We Fade"])
 
-function KarmaFieldsEnvironmentChanges() {
-  BaseEnvironments["ShadowBlur"] = ShadowBlur
-  ChangedEnvironments[0] = "ShadowBlur"
-  ShadowBlur = 0
-  ChangedEnvironments[1] = "TextColor"
-  ChangeTextColor("#000000")
-  ChangedEnvironments[2] = "BackgroundShadows"
-  ColorBackground.style["box-shadow"] = "inset 0 0 30em rgba(0,0,0,0.5)"
-}
+RegisterAlbum("basslinekickintheremixes","Pegboard Nerds - Bassline Kickin (The Remixes)",["Bassline Kickin (Astronaut Remix)","Bassline Kickin (Dzeko & Torres Remix)","Bassline Kickin (Silverback Remix)"])
+RegisterAlbum("heartbittheremixes","Pegboard Nerds - Heartbit (The Remixes)",["Heartbit (feat. Tia Simone) (12th Planet Remix)","Heartbit (feat. Tia Simone) (Sikdope Remix)","Heartbit (feat. Tia Simone) (Tommie Sunshine X Usica Remix)","Heartbit (feat. Tia Simone) (MIU Remix)","Heartbit (feat. Tia Simone) (Quiet Disorder Remix)","Heartbit VIP (feat. Tia Simone)"])
+RegisterAlbum("pinkcloudep","Pegboard Nerds - Pink Cloud EP",["Emoji","Pink Cloud (feat. Max Collins)","Just Like That (feat. Johnny Graves)","Downhearted (feat. Jonny Rose)","The End Is Near (Fire In The Hole VIP)"])
+RegisterAlbum("thelosttracksep","Pegboard Nerds - The Lost Tracks EP",["Frainbreeze","Close Encounter","20K","Lawless","Revenge Of The Nerds (VIP Mix)","Rocktronik"])
+RegisterAlbum("theuncagedremixes","Pegboard Nerds - The Uncaged Remixes",["Here It Comes (Snavs & Toby Green Remix)","Badboi (Snavs Remix)","Badboi (Dani Deahl Remix)","Badboi (VIP)"])
 
-function PureWhiteEnvironmentChanges() {
-  MonstercatLogo.style["-webkit-filter"] = "invert(100%)"
-  ChangedEnvironments[0] =  "MonstercatLogo"
-}
+RegisterAlbum("dreamsep","Rogue - Dream EP",["Dreams (feat. Laura Brehm)","Air","Moments (feat. Meg Dean)","Escape"])
+RegisterAlbum("earthep","Rogue - Earth EP",["From The Dust","Cataclysm (feat. Meg Dean)","Perfect Views","Through The Dark"])
 
-RegisterBackground("Matches (feat. Aaron Richards)","Song",[["img/backgrounds/matchesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
-RegisterBackground("Tristam X Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
-
-RegisterBackground("Crescendo (feat. MYLK)","Song",[["img/backgrounds/crescendobackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("This Feeling","Song",[["img/backgrounds/thisfeelingbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Blackout","Song",[["img/backgrounds/blackoutbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-RegisterBackground("pinkcloudep","Album",[["img/backgrounds/pinkcloudbackground1.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground2.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground3.jpg",3840,2160,"rgba(0,0,0,0.5)"]],"#F6B4D9")
-RegisterBackground("pinkcloudtheremixes","Album",[["img/backgrounds/pinkcloudbackground1.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground2.jpg",3840,2160,"rgba(0,0,0,0.5)"],["img/backgrounds/pinkcloudbackground3.jpg",3840,2160,"rgba(0,0,0,0.5)"]],"#F6B4D9")
-RegisterBackground("thelosttracksep","Album",[["img/backgrounds/thelosttracksbackground.png",1920,1080,"rgba(0,0,0,0)"]],null)
-
-RegisterBackground("Break The Silence","Song",[["img/backgrounds/breakthesilencebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Imperfect Views","Song",[["img/backgrounds/imperfectviewsbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Tribal","Song",[["img/backgrounds/tribalbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Divided VIP","Song",[["img/backgrounds/dividedvipbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Lift You Up (feat. EMEL)","Song",[["img/backgrounds/liftyouupbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-RegisterBackground("Who's Got Your Love","Song",[["img/backgrounds/whosgotyourlovebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("Before We Fade","Song",[["img/backgrounds/beforewefadebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("miraisekaiep","Album",[["img/backgrounds/miraisekaibackground.jpg",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+RegisterAlbum("dancetoep","Tut Tut Child - Dance To It EP",["Dance To It","Dragon Pirates","Fat Cat Adventures"])
+RegisterAlbum("askyourfriendsfirstep","Tut Tut Child - Ask Your Friends First EP",["Hot Pursuit","Breathe (feat. Danyka Nadeau)","Plain Sight (feat. Rachel Hirons)","Birds On The Wire (feat. Augustus Ghost)"])
