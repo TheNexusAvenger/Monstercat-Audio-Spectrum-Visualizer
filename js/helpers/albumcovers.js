@@ -6,7 +6,6 @@ var TextSpinSpeed = 500
 var CurrentLogo = "img/monstercatlogo.png"
 function ResetToMonstercatLogo() {
   AlbumImage.src = "img/blankpixel.png"
-  console.log(CurrentLogo)
   MonstercatLogo.src = CurrentLogo
 }
 
@@ -62,9 +61,47 @@ function UpdateAlbumCover(CurrentTime,NewLogoSize) {
   }
 }
 
-function DisplaySongName() {
+
+
+
+function GetLineCount(String) {
+	String = String.toLowerCase().replace("<br/>","<br>")
+	var Count = 0
+	var Done = false
+	var StringLeft = String
+	while (Done == false) {
+		var Match = StringLeft.match("<br>")
+		if (Match) {
+			var Index = Match.index
+			StringLeft  = StringLeft .substring(Index + 4)
+			Count++
+		} else {
+			Done = true
+		}
+	}
+	return Count
+}
+
+function DisplaySongName(ArtistName,SongName) {
   TextDiv.style.display = "block";
   AlbumTextDiv.style.display = "none";
+  ArtistText.innerHTML = ArtistName
+  SongNameText.innerHTML = SongName
+
+
+  var ArtistLineCount = GetLineCount(ArtistName) + 1
+  var SongLineCount = GetLineCount(SongName) + 1
+  var SongNameLines = SongLineCount * SongNameSizeRatio
+  ArtistNameActualRatio = (SongTextSize) / (ArtistLineCount + SongNameLines)
+  SongNameActualRatio = (SongTextSize * SongNameSizeRatio) / (ArtistLineCount + SongNameLines)
+  var SongTextSizeRatio = (SongTextSize * SongNameSizeRatio * SongNameLines) / (ArtistLineCount + SongNameLines)
+  var AristTextSizeRatio = (SongTextSize * ArtistLineCount) / (ArtistLineCount + SongNameLines)
+  var FromTop = (1 - SongTextSize)/2  * 100
+  var ArtistHeight = Math.floor(AristTextSizeRatio * 100)
+  ArtistText.style.top = FromTop + "%"
+  ArtistText.style.height = ArtistHeight + "%"
+  SongNameText.style.top = (ArtistHeight + FromTop) + "%"
+  SongNameText.style.height = Math.floor(SongTextSizeRatio * 100) + "%"
 }
 
 function AddZeroToFront(Num) {
@@ -121,8 +158,9 @@ function UpdateAlbumText(CurrentTime,NewWidth) {
   if (NextAlbum != null) {
     var Time = NextAlbum[0]
     var Type = NextAlbum[1]
-    var AlbumName = NextAlbum[2]
-    var SongList = NextAlbum[3]
+    var NextDataType = NextAlbum[2]
+    var AlbumName = NextAlbum[3]
+    var SongList = NextAlbum[4]
 
     var BeforeRatio = Clamp((Time - CurrentTime)/TextSpinSpeed)
     var AfterRatio = Clamp((CurrentTime - Time)/TextSpinSpeed)
@@ -135,7 +173,7 @@ function UpdateAlbumText(CurrentTime,NewWidth) {
     }
     if (CurrentTime > Time && SetLastAlbumText == false) {
       SetLastAlbumText = true
-      if (AlbumName != null) {
+      if (NextDataType == "Album") {
         var Song1 = SongList[0]
         var Song2 = SongList[1]
         var Song3 = SongList[2]
@@ -159,8 +197,8 @@ function UpdateAlbumText(CurrentTime,NewWidth) {
           Song3Number = Song3[0]
         }
         DisplaySongList(AlbumName,Song1Name,Color1,Song1Number,Song2Name,Color2,Song2Number,Song3Name,Color3,Song3Number)
-      } else {
-        DisplaySongName()
+      } else if (NextDataType == "Song") {
+        DisplaySongName(NextAlbum[3],NextAlbum[4])
       }
     }
     if ((Type == "Change" || Type == "Open") && AfterRatio > 0) {
