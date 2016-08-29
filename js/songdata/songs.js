@@ -3,7 +3,7 @@
 
 AddSong("Aero Chord","4U","Moombahton","AeroChord_4U.mp3","img/artists/aerochord.png","4usingle")
 AddSong("Aero Chord","Boundless","Trap","AeroChord_Boundless.mp3","img/artists/aerochord.png","boundlesssingle")
-AddSong("Aero Chord & Razihel","Titans","Trap","AeroChordAndRazihel_Titans.mp3","img/artists/aerochord.png","titanssingle")
+AddSong("Aero Chord &<br>Razihel","Titans","Trap","AeroChordAndRazihel_Titans.mp3","img/artists/aerochord.png","titanssingle")
 
 AddSong("Au5","Crossroad<br>(feat. Danyka Nadeau)","Trance","Au5_Crossroad.mp3","img/artists/au5.png","crossroadsingle")
 AddSong("Au5","Snowblind<br>(feat. Tasha Baxter)","Dubstep","Au5_Snowblind.mp3","img/artists/au5.png","snowblindsingle")
@@ -18,7 +18,7 @@ AddSong("Astronaut","Rain<br>(MitiS Remix)","Drumstep","Astronaut_RainMitiSRemix
 AddSong("Astronaut","Rain<br>(Stephen Walking Remix)","Glitch Hop or 110 BPM","Astronaut_RainStephenWalkingRemix.mp3","img/artists/astronaut.png","destinationrain")
 AddSong("Astronaut & Far Too Loud","War<br>(F.O.O.L & Didrick Remix)","Electro","AstronautAndFarTooLoud_WarFOOLAndDidrickRemix.mp3","img/artists/astronaut.png","destinationwar")
 
-AddSong("Botnek & I See MONSTAS","Deeper Love","Drum & Bass","BotnekAndISeeMONSTAS_DeeperLove.mp3","img/artists/botnek.png","deeperlovesingle")
+AddSong("Botnek &<br>I See MONSTAS","Deeper Love","Drum & Bass","BotnekAndISeeMONSTAS_DeeperLove.mp3","img/artists/botnek.png","deeperlovesingle")
 
 AddSong("Case & Point","Fugitive","Electro","CaseAndPoint_Fugitive.mp3","img/artists/caseandpoint.png","fugitivesingle")
 AddSong("Case & Point","Upgrade","Electro","CaseAndPoint_Upgrade.mp3","img/artists/caseandpoint.png","upgradeep")
@@ -47,11 +47,11 @@ AddSong("Grabbitz","Turn Around","Dubstep","Grabbitz_TurnAround.mp3","img/artist
 
 AddSong("Grant Bowtie","Reach","Future Bass","GrantBowtie_Reach.mp3","img/artists/grantbowtie.png","reachsingle")
 
-AddSong("Hellberg, Teqq & Taylr Renne","Air<br>(Hellberg's Back To Summer Mix)","Progressive House","HellbergTeqqAndTaylrRenee_AirHellbergsBackToSummerMix.mp3","img/artists/hellberg.png","airhellbergsbacktosummermixsingle")
+AddSong("Hellberg, Teqq &<br> Taylr Renne","Air<br>(Hellberg's Back To Summer Mix)","Progressive House","HellbergTeqqAndTaylrRenee_AirHellbergsBackToSummerMix.mp3","img/artists/hellberg.png","airhellbergsbacktosummermixsingle")
 AddSong("Hellberg & Rich Edwards","Ashes (Burn Your Love)<br>(feat. Danyka Nadeau)","Progressive House","HellbergAndRichEdwards_AshesBurnYourLove.mp3","img/artists/hellberg.png","ashessingle")
 AddSong("Hellberg","Follow My Heart","Progressive House","Hellberg_FollowMyHeart.mp3","img/artists/hellberg.png","monstercat011revolution")
 AddSong("Hellberg","Get Up","Progressive House","Hellberg_GetUp.mp3","img/artists/hellberg.png","monstercat012aftermath")
-AddSong("Hellberg & Rich Edwards","Hands Of Time","Progressive House","HellbergAndRichEdwards_HandsOfTime.mp3","img/artists/hellberg.png","handsoftimesingle")
+AddSong("Hellberg &<br>Rich Edwards","Hands Of Time","Progressive House","HellbergAndRichEdwards_HandsOfTime.mp3","img/artists/hellberg.png","handsoftimesingle")
 AddSong("Hellberg","I'm Not Over<br>(feat. Tash)","Progressive House","Hellberg_ImNotOver.mp3","img/artists/hellberg.png","imnotoversingle")
 AddSong("Hellberg","Saviors","Progressive House","Hellberg_Saviors.mp3","img/artists/hellberg.png","saviorssingle")
 AddSong("Hellberg","The Girl<br>(feat. Cozi Zeuhlsdoff)","Progressive House","Hellberg_TheGirl.mp3","img/artists/hellberg.png","thisismeep")
@@ -77,10 +77,20 @@ AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmel
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
 
+AddSong("Muzzy & Day One","Black Magic","Drum & Bass","MuzzyAndDayOne_BlackMagic.mp3","img/artists/muzzy.png","monstercat008anniversary")
+AddSong("Muzzy","Calling Out<br>(feat. KG & Skyelle)","Drum & Bass","Muzzy_CallingOut.mp3","img/artists/muzzy.png","callingoutsingle")
+AddSong("Muzzy","Children Of Hell","Drum & Bass","Muzzy_ChildrenOfHell.mp3","img/artists/muzzy.png","fminorfactoryep")
 AddSong("Muzzy","Crescendo<br>(feat. MYLK)","Drum & Bass","Muzzy_Crescendo.mp3","img/artists/muzzy.png","monstercat5yearanniversary")
+AddSong("Muzzy","Feeling Stronger (feat. Charlotte Colley)<br>(High Maintenance Remix)","Drum & Bass","Muzzy_FeelingStrongerHighMaintenanceRemix.mp3","img/artists/muzzy.png","getcrazyfeelingstrongertheremixes")
+AddSong("Muzzy","Insignia","EDM","Muzzy_Insignia.mp3","img/artists/muzzy.png","insigniasingle")
+AddSong("Muzzy","Junction Seven","Drumstep","Muzzy_JunctionSeven.mp3","img/artists/muzzy.png","fminorfactoryep")
+AddSong("Muzzy","Letz Rock","Drum & Bass","Muzzy_LetzRock.mp3","img/artists/muzzy.png","letzrockep")
+AddSong("Muzzy & Roniit","Pegasus","Drum & Bass","MuzzyAndRoniit_Pegasus.mp3","img/artists/muzzy.png","letzrockep")
+AddSong("Muzzy","Play<br>(ft. UK:ID)","Drum & Bass","Muzzy_Play.mp3","img/artists/muzzy.png","fminorfactoryep")
+AddSong("Muzzy","The Phantom<br>(feat. High Maintenance)","Drum & Bass","Muzzy_ThePhantom.mp3","img/artists/muzzy.png","thetakeoverep")
 
 AddSong("Nitro Fun","Cheat Codes","Electro","NitroFun_CheatCodes.mp3","img/artists/nitrofun.png","cheatcodessingle")
-AddSong("Nitro Fun & Hyper Potions","Checkpoint","Electro","NitroFunAndHyperPotions_Checkpoint.mp3","img/artists/nitrofun.png","checkpointsingle")
+AddSong("Nitro Fun &<br>Hyper Potions","Checkpoint","Electro","NitroFunAndHyperPotions_Checkpoint.mp3","img/artists/nitrofun.png","checkpointsingle")
 AddSong("Nitro Fun","Final Boss","Electro","NitroFun_FinalBoss.mp3","img/artists/nitrofun.png","finalbosssingle")
 AddSong("Nitro Fun","New Game","Electro","NitroFun_NewGame.mp3","img/artists/nitrofun.png","newgamesingle")
 AddSong("Nitro Fun","Soldiers","House","NitroFun_Soldiers.mp3","img/artists/nitrofun.png","soldierssingle")
@@ -116,7 +126,7 @@ AddSong("Pegboard Nerds","Just Like That<br>(feat. Johnny Graves)","Future Bass"
 AddSong("Pegboard Nerds","Just Like That (feat. Johnny Graves)<br>(Two Friends Remix)","Progressive House","PegboardNerds_JustLikeThatTwoFriendsRemix.mp3","img/artists/pegboardnerds.png","pinkcloudtheremixes")
 AddSong("Pegboard Nerds","Luigi's Mansion","Dubstep","PegboardNerds_LuigisMansion.mp3","img/artists/pegboardnerds.png","luigismansionsingle")
 AddSong("Pegboard Nerds","New Style","EDM","PegboardNerds_NewStyle.mp3","img/artists/pegboardnerds.png","newstylesingle")
-AddSong("Pegboard Nerds","Pink Cloud<br>(feat. Max Collins)","Progressive House","PegboardNerds_PinkCloud.mp3","img/artists/pegboardnerds.png","pinkcloudep")
+AddSong("Pegboard Nerds","Pink Cloud<br>(feat. Max Collins)","Indie Dance","PegboardNerds_PinkCloud.mp3","img/artists/pegboardnerds.png","pinkcloudep")
 AddSong("Pegboard Nerds","Pink Cloud (feat. Max Collins)<br>(FKYA Remix)","EDM","PegboardNerds_PinkCloudFKYARemix.mp3","img/artists/pegboardnerds.png","pinkcloudtheremixes")
 AddSong("Pegboard Nerds<br>& Tristam","Razor Sharp","Glitch Hop Or 110 BPM","PegboardNerdsAndTristam_RazorSharp.mp3","img/artists/pegboardnerds.png","razorsharpsingle")
 AddSong("Pegboard Nerds & Tristam","Razor Sharp VIP<br>(Vocal Mix)","Glitch Hop Or 110 BPM","PegboardNerdsAndTristam_RazorSharpVIPVocalMix.mp3","img/artists/pegboardnerds.png","razorsharpvocalmixsingle")
@@ -125,7 +135,7 @@ AddSong("Pegborad Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.m
 AddSong("Pegboard Nerds","Swamp Thing","EDM","PegboardNerds_SwampThing.mp3","img/artists/pegboardnerds.png","swampthingsingle")
 AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/artists/pegboardnerds.png","trythissingle")
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
-AddSong("Pegboard Nerds & MIU","Weaponize","Dubstep","PegboardNerdsAndMIU_Weaponize.mp3","img/artists/pegboardnerds.png","weaponizesingle")
+AddSong("Pegboard Nerds &<br>MIU","Weaponize","Dubstep","PegboardNerdsAndMIU_Weaponize.mp3","img/artists/pegboardnerds.png","weaponizesingle")
 
 AddSong("Razihel","Children Of The Night","Bounce","Razihel_ChildrenOfTheNight.mp3","img/artists/razihel.png","childrenofthenightsingle")
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
