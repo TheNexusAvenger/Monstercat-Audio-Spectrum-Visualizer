@@ -41,6 +41,11 @@ RegisterAlbum("buildthecitiesreconstructions","Karma Fields - Build The Cities (
 
 RegisterAlbum("monstercat5yearanniversary","Monstercat - Monstercat 5 Year Anniversary",["Matches (feat. Aaron Richards)","Lift You Up (feat. EMEL)","Blackout","Divided VIP","Imperfect Views","This Feeling","Tribal","Break The Silence","Crescendo (feat. MLYK)","Before We Fade"])
 
+RegisterAlbum("fminorfactoryep","Muzzy - F Minor Factory EP",["The Factory","Junction Seven","Play (feat. UK:ID)","Children Of Hell"])
+RegisterAlbum("getcrazyfeelingstrongertheremixes","Muzzy - Get Crazy / Feeling Stronger (The Remixes)",["Get Crazier","Get Crazy (AgNO3 Remix)","Feeling Stronger (feat. Charlotte Colley) (High Maintenance Remix)","Feeling Stronger (feat. Charlotte Colley) (Priority One & Nct Remix)"])
+RegisterAlbum("letzrockep","Muzzy - Letz Rock EP",["Letz Rock","Pegasus"])
+RegisterAlbum("thetakeoverep","Muzzy - The Takeover EP",["Timberwolf","Rave Through The Apocalpse","Draining Atlantic","The Phantom (feat. High Maintenance)"])
+
 RegisterAlbum("basslinekickintheremixes","Pegboard Nerds - Bassline Kickin (The Remixes)",["Bassline Kickin (Astronaut Remix)","Bassline Kickin (Dzeko & Torres Remix)","Bassline Kickin (Silverback Remix)"])
 RegisterAlbum("heartbittheremixes","Pegboard Nerds - Heartbit (The Remixes)",["Heartbit (feat. Tia Simone) (12th Planet Remix)","Heartbit (feat. Tia Simone) (Sikdope Remix)","Heartbit (feat. Tia Simone) (Tommie Sunshine X Usica Remix)","Heartbit (feat. Tia Simone) (MIU Remix)","Heartbit (feat. Tia Simone) (Quiet Disorder Remix)","Heartbit VIP (feat. Tia Simone)"])
 RegisterAlbum("pinkcloudep","Pegboard Nerds - Pink Cloud EP",["Emoji","Pink Cloud (feat. Max Collins)","Just Like That (feat. Johnny Graves)","Downhearted (feat. Jonny Rose)","The End Is Near (Fire In The Hole VIP)"])
