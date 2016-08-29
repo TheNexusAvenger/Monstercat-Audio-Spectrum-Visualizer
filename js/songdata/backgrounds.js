@@ -66,6 +66,7 @@ RegisterBackground("Matches (feat. Aaron Richards)","Song",[["img/backgrounds/ma
 RegisterBackground("Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
 RegisterBackground("Tristam X Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
 
+RegisterBackground("fminorfactoryep","Album",[["img/backgrounds/fminorfactoryepbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 RegisterBackground("Crescendo (feat. MYLK)","Song",[["img/backgrounds/crescendobackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("This Feeling","Song",[["img/backgrounds/thisfeelingbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
