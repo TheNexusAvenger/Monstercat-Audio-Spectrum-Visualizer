@@ -128,3 +128,4 @@ if (LastVolume) {
   }
 }
 UpdateText()
+UpdateVolume()
