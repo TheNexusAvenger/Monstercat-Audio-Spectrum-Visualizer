@@ -1,3 +1,4 @@
+//The averaging function removes spikes. Needs to be replaced with something.
 //Heavily modified from https://github.com/caseif/vis.js/blob/gh-pages/js/analysis/spectrum_algorithms.js
 
 
@@ -10,12 +11,10 @@ var marginDecay = 1.6
 var spectrumMaxExponent = 5
 var spectrumMinExponent = 3
 var spectrumExponentScale = 2
-var SideWeight = 2
-var CenterWeight = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.5
+var SpectrumLogScale = 2.6
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -33,12 +32,12 @@ function GetVisualBins(Array) {
   /*var NewArray = []
   for (var i = 0; i < SpectrumBarCount; i++) {
     var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
-    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] //* (Bin % 1)
-            //+ Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
+    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] * (Bin % 1)
+            + Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
   }
   UpdateParticleAttributes(NewArray)
 
-  return NewArray*/
+  return NewArray */
 
   var SamplePoints = []
   var NewArray = []
@@ -74,12 +73,11 @@ function TransformToVisualBins(Array) {
   return Array;
 }
 
-
 function AverageTransform(Array) {
     var Values = []
     var Length = Array.length
 
-
+    /*
     for (var i = 0; i < Length; i++) {
         var Value = 0
         if (i == 0) {
@@ -92,6 +90,26 @@ function AverageTransform(Array) {
             var NextValue = Array[i + 1]
 
             Value = (CurValue + NextValue + PrevValue)/3
+
+        }
+        Value = Math.min(Value + 1, spectrumHeight)
+
+        Values[i] = Value;
+    }
+
+    return Values*/
+
+    var Values = []
+    for (var i = 0; i < Length; i++) {
+        var Value = 0
+        if (i == 0) {
+            Value = Array[i];
+        } else {
+            var PrevValue = Array[i - 1]
+            var CurValue = Array[i]
+
+            Value = (CurValue + PrevValue)/2//(CurValue + NextValue + PrevValue)/3
+
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
