@@ -330,7 +330,6 @@ function InitializeSpectrumHandler() {
   AudioNode.onaudioprocess = HandleAudio
   Analyser.fftSize = FFTSize
   Analyser.smoothingTimeConstant = 0
-  GainNode.gain.value = (Volume/100) - 1
   GainNode.connect(Context.destination)
   AudioNode.connect(Context.destination)
   Analyser.connect(AudioNode)
