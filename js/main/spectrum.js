@@ -41,8 +41,6 @@ var RatioFromLogoEnd = 0
 var RatioFromTextEnd = 0
 var LastFrame = 0
 
-var SVGNameSpace = "http://www.w3.org/2000/svg"
-
 var LastRenderedFrame = 0
 
 function ResizeFrames(CurrentTime) {
@@ -77,15 +75,11 @@ function ResizeFrames(CurrentTime) {
   var NewWidth = TotalWidth * Mult
   Div.height = NewHeight
   Div.width = NewWidth
-  if (UseSVGOverCanvas == true) {
-    MainSVG.style.height = NewHeight * BarsHeightRatio
-    MainSVG.style.width = NewWidth
-  } else {
-    var ShowBlurSize = Math.floor(ShadowBlur * Mult)
-    Canvas.height = NewHeight * BarsHeightRatio + (ShowBlurSize * 2)
-    Canvas.width = NewWidth + (ShowBlurSize*2)
-    Canvas.style.margin = "-" + ShowBlurSize + "px 0 0 -" + ShowBlurSize + "px"
-  }
+
+  var ShowBlurSize = Math.floor(ShadowBlur * Mult)
+  Canvas.height = NewHeight * BarsHeightRatio + (ShowBlurSize * 2)
+  Canvas.width = NewWidth + (ShowBlurSize*2)
+  Canvas.style.margin = "-" + ShowBlurSize + "px 0 0 -" + ShowBlurSize + "px"
 
   Div.style.margin = "-" + NewHeight/2 + "px 0 0 -" + NewWidth/2 + "px"
 
@@ -164,39 +158,7 @@ function EaseSineOut(Number) {
   return Math.sin(Number * 3.1415/2 )
 }
 
-if (UseSVGOverCanvas == true) {
-  var Bars = {}
 
-  function CreateBar() {
-    var Rect = document.createElementNS(SVGNameSpace,"rect");
-    Rect.setAttributeNS(null,"x","0px");
-    Rect.setAttributeNS(null,"y","0px");
-    Rect.setAttributeNS(null,"height","0px");
-    Rect.setAttributeNS(null,"width","0px");
-    Rect.setAttributeNS(null,"fill","#FFFFFF");
-    MainSVG.appendChild(Rect);
-    return Rect
-  }
-  for (var i = 0; i < SpectrumBarCount; i++) {
-    Bars[i] = CreateBar()
-  }
-  Bars["Left"] = CreateBar()
-  Bars["Right"] = CreateBar()
-
-  function FillRect(PosX,PosY,Width,Height,Id) {
-    var Bar = Bars[Id]
-    Bar.style.fill = GenreColor
-    Bar.style.x = Math.round(PosX) + "px"
-    Bar.style.y = Math.round(PosY) + "px"
-    Bar.style.width = Math.round(Width) + "px"
-    Bar.style.height = Math.round(Height) + "px"
-  }
-} else {
-  function FillRect(PosX,PosY,Width,Height,Id) {
-    CanvasColor.fillStyle = GenreColor
-    CanvasColor.fillRect(PosX,PosY,Width,Height)
-  }
-}
 
 function HandleAudio() {
   UpdateTextVisibility()
@@ -243,13 +205,8 @@ function HandleAudio() {
   var NewHeight = 0
   var NewWidth = 0
   var ShowBlurSize = Math.floor(ShadowBlur * Mult)
-  if (UseSVGOverCanvas == true) {
-    var NewHeight = MainSVG.clientHeight
-    var NewWidth = MainSVG.clientWidth
-  } else {
-    var NewHeight = Canvas.clientHeight - (ShowBlurSize*2)
-    var NewWidth = Canvas.clientWidth - (ShowBlurSize*2)
-  }
+  var NewHeight = Canvas.clientHeight - (ShowBlurSize*2)
+  var NewWidth = Canvas.clientWidth - (ShowBlurSize*2)
 
   var DataArray = new Uint8Array(Analyser.frequencyBinCount)
   Analyser.getByteFrequencyData(DataArray)
@@ -285,11 +242,8 @@ function HandleAudio() {
   CanvasColor.shadowColor = "#000000"
   AlbumImage.style["background-color"] = GenreColor
 
+
   if (RatioFromIntroStart == 1 && RatioFromIntroEnd == 1 ) {
-    if (UseSVGOverCanvas == true) {
-      FillRect(0,0,0,0,"Left")
-      FillRect(0,0,0,0,"Right")
-    }
     if (DrawParticles == true) {
       ParticleBackground.style.opacity = 1
     }
@@ -298,7 +252,7 @@ function HandleAudio() {
       var Pos = (NewSeperation + NewBarWidth) * i + ShowBlurSize
       var Height = TransformedVisualData[i]/255 * NewHeight * TimeMult
       if (Height < 2) { Height = 2 }
-      FillRect(Pos,NewHeight - Height,NewBarWidth,Height,i)
+      CanvasColor.fillRect(Pos,NewHeight - Height,NewBarWidth,Height)
     }
   } else {
     if (RatioFromIntroStart < 1) {
@@ -308,8 +262,8 @@ function HandleAudio() {
       }
 
       if (HalfWidth > 0) {
-        FillRect(0,NewHeight - 2,HalfWidth,2,"Left")
-        FillRect((NewWidth - HalfWidth),NewHeight - 2,HalfWidth,2,"Right")
+        CanvasColor.fillRect(0,NewHeight - 2,HalfWidth,2)
+        CanvasColor.fillRect((NewWidth - HalfWidth),NewHeight - 2,HalfWidth,2)
       }
     } else {
       var HalfWidth = (NewWidth/2) * RatioFromIntroEnd
@@ -318,8 +272,8 @@ function HandleAudio() {
       }
 
       if (HalfWidth > 0) {
-        FillRect(0,NewHeight - 2,HalfWidth,2,"Left")
-        FillRect((NewWidth - HalfWidth),NewHeight - 2,HalfWidth,2,"Right")
+        CanvasColor.fillRect(0,NewHeight - 2,HalfWidth,2)
+        CanvasColor.fillRect((NewWidth - HalfWidth),NewHeight - 2,HalfWidth,2)
       }
     }
   }
