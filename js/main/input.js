@@ -108,9 +108,8 @@ Body.addEventListener("keydown", function(Key) {
 
         ParticleBackground.style.opacity = 0
         TimeLength = 0
-        if (Source) {
+        if (Source && Paused == false) {
           Source.stop()
-          ForceStop()
         } else {
           ForceStop()
         }
@@ -124,7 +123,6 @@ if (LastVolume) {
   var NewVolume = parseInt(LastVolume)
   if (isNaN(NewVolume) != true) {
     Volume = NewVolume
-    UpdateVolume()
   }
 }
 UpdateText()
