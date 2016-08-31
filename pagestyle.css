@@ -24,14 +24,6 @@ canvas {
   z-index:998;
 }
 
-
-svg {
-  left:0px;
-  position:absolute;
-  top:0px;
-  z-index: 998;
-}
-
 div {
   height:0px;
   margin:0px;
