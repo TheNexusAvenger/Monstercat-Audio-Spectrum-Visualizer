@@ -9,13 +9,17 @@ Viewing:
 <br>(? or &)artist=Artist Name
 <br>(? or &)genre=Genre Name
 <br>Ex: index.html?song=The Vine&artist=Tristam
+<br>
+Monstercat FM edition:
+(Development) https://rawgit.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/master/monstercatfm.html
+(Production) https://cdn.rawgit.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/master/monstercatfm.html
 <br><br><br>
 This is a complete redo of the modified version of [vis.j](https://github.com/TheNexusAvenger/vis.js), from the one by [caseif](https://github.com/caseif/vis.js). This fixes some of the key issues, such as the page having to refresh to work and being domain dependant, and adds features and other performance improvements, and scaling.
 
 ## Re-purposing (GitHub Fork)
 If you don't want to download it to your computer and just use it as a fork, here are the steps needed:
 1. Press the fork button in this repositionary to create a copy.<br>
-2. In README.md, change the two TheNexusAvenger links (lines 6 and 7, but not 9) to your GitHub username.<br>
+2. In README.md, change the four TheNexusAvenger links (lines 5, 6, 14, and 15, but not 17) to your GitHub username.<br>
 (Optinal) 3. In index.html, change the one TheNexusAvenger link (line 39) to your GitHub username. 
 
 ## Re-purposing (Download)
