@@ -56,6 +56,19 @@ function Preload(ImageUrl) {
 }
 
 var CachedAudio = []
+var MaxCachedURLs = 5
+var LastCachedURLs = []
+function PushValues(NewValue) {
+	var FirstValue = LastCachedURLs [0]
+	for (var i = 0; i < MaxCachedURLs - 1; i++) {
+		LastCachedURLs[i] = LastCachedURLs[i + 1]
+	}
+	LastCachedURLs[MaxCachedURLs - 1] = NewValue
+	return FirstValue
+}
+
+
+var CachedAudio = []
 function GetAudioSource(Url,Callback) {
   var ExistingResponse = CachedAudio[Url]
   if (ExistingResponse) {
@@ -70,6 +83,11 @@ function GetAudioSource(Url,Callback) {
     Request.onload = () => {
       Context.decodeAudioData(Request.response, function(Buffer) {
         CachedAudio[Url] = Buffer
+        var CacheToClear = PushValues(Url)
+        if (CacheToClear) {
+          CachedAudio[CacheToClear] = null
+        }
+
         if (Callback) {
           Callback(Buffer)
         }
