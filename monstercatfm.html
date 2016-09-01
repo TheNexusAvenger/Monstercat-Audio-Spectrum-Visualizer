@@ -1,0 +1,56 @@
+<!--This version is specialized for a new version of Monstercat FM. Features like encoding are not included.-->
+<!--Made by TheNexusAvenger-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title id="Title">
+    Loading...
+  </title>
+  <!--WebGL is stored locally to work with file:// with no internet. To undo, switch the comments.-->
+  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>-->
+  <script type="text/javascript" src="js/webgl/webgl.js"></script>
+  <link rel="stylesheet" href="./pagestyle.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+</head>
+<body id="Body" bgcolor=#000000>
+  <div class="ImageClip">
+    <img id="BackgroundImage" class="BackgroundImage"></img>
+  </div>
+  <div id="ColorBackground" class="ColorBackground"></div>
+  <div id="ParticleBackground" class="ParticleBackground"></div>
+  <div id="MainDiv" class="MainDiv" height="0px" width="0px">
+    <canvas id="MainCanvas"></canvas>
+    </canvas>
+    <img id="AlbumImage" class="AlbumImage" src="img/blankpixel.png"></img>
+    <img id="MonstercatLogo" src="img/monstercatlogo.png" style="-webkit-filter:invert(100%)"></img>
+    <div id="TextDiv" class="TextDiv1">
+      <p id="Artist" class="ArtistName">Artist Name</p>
+      <p id="SongName" class="SongName">Song Name</p>
+    </div>
+    <div id="AlbumTextDiv" class="TextDiv2">
+      <p id="AlbumTitle" class="AlbumTitle">Test for now</p>
+      <p id="AlbumSongTitle1" class="AlbumSongTitle1">Test for now</p>
+      <p id="AlbumSongTitle2" class="AlbumSongTitle2">Test for now</p>
+      <p id="AlbumSongTitle3" class="AlbumSongTitle3">Test for now</p>
+    </div>
+  </div>
+  <div id="LoadingDiv" class="LoadingDiv">
+    <p id="LoadingText" class="LoadingText"></p>
+  </div>
+  <div id="LowerTextDiv" class="LowerTextDiv">
+    <p id="LeftText" class="LeftText">&nbsp;Press P to Pause<br>&nbsp;Export Data (E): No<br>&nbsp;Volume (Arrow Keys): 100%</p>
+    <p id="RightText" class="RightText"><a id="Link1" href="https://github.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/" target="_blank">GitHub&nbsp;</a><br><a id="Link2" href="https://www.roblox.com/games/435042236/Monstercat-Style-Audio-Spectrum-Visualizer" target="_blank">ROBLOX Place&nbsp;</a></p>
+  </div>
+  <script type="text/javascript" src="js/helpers/config.js"></script>
+
+  <script type="text/javascript" src="js/helpers/monstercatfm/songutil.js"></script>
+  <script type="text/javascript" src="js/helpers/download.js"></script>
+  <script type="text/javascript" src="js/helpers/analyser.js"></script>
+  <script type="text/javascript" src="js/helpers/urlsearch.js"></script>
+
+  <script type="text/javascript" src="js/songdata/songs.js"></script>
+
+  <script type="text/javascript" src="js/main/monstercatfm/input.js"></script>
+  <script type="text/javascript" src="js/main/monstercatfm/spectrum.js"></script>
+</body>
+</html>
