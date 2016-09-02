@@ -3,6 +3,7 @@
 
 AddSong("Aero Chord","4U","Moombahton","AeroChord_4U.mp3","img/artists/aerochord.png","4usingle")
 AddSong("Aero Chord","Boundless","Trap","AeroChord_Boundless.mp3","img/artists/aerochord.png","boundlesssingle")
+AddSong("Aero Chord","Surface","Trap","AeroChord_Surface.mp3","img/artists/aerochord.png","surfacesingle")
 AddSong("Aero Chord &<br>Razihel","Titans","Trap","AeroChordAndRazihel_Titans.mp3","img/artists/aerochord.png","titanssingle")
 
 AddSong("Au5","Crossroad<br>(feat. Danyka Nadeau)","Trance","Au5_Crossroad.mp3","img/artists/au5.png","crossroadsingle")
@@ -26,6 +27,7 @@ AddSong("Case & Point","Upgrade","Electro","CaseAndPoint_Upgrade.mp3","img/artis
 AddSong("DotEXE","Inside Out","Trap","DotEXE_InsideOut.mp3","img/artists/dotexe.png","insideoutsingle")
 
 AddSong("Draper","Pressure<br>(feat. Laura Brehm)","EDM","Draper_Pressure.mp3","img/artists/draper.png","pressuresingle")
+AddSong("Draper","Ready For Us<br>(feat. Sykes) ","Indie Dance","Draper_ReadyForUs.mp3","img/artists/draper.png","readyforussingle")
 
 AddSong("Droptek &<br>Tut Tut Child","Drop That Child","Dubstep","DroptekAndTutTutChild_DropThatChild.mp3","img/artists/tuttutchild.png","dropthatchildsingle")
 
@@ -73,6 +75,7 @@ AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/l
 AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","LetsBeFriends_ManslaughterVipMix.mp3","img/artists/letsbefriends.png","monstercat014discovery")
 
 AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmello.png","alonesingle")
+AddSong("Marshmello","Alone<br>(MRVLZ Remix)","Future Bass","Marshmello_AloneMRVLZRemix.mp3","img/artists/marshmello.png","alonetheremixes")
 
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
@@ -137,6 +140,9 @@ AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
 AddSong("Pegboard Nerds &<br>MIU","Weaponize","Dubstep","PegboardNerdsAndMIU_Weaponize.mp3","img/artists/pegboardnerds.png","weaponizesingle")
 
+AddSong("Puppet & Foria","I'm Here","Indie Dance","PuppetAndForia_ImHere.mp3","img/artists/puppet.png","imheresingle")
+AddSong("Puppet &<br>The Eden Project","The Fire","Electro","PuppetAndTheEdenProject_TheFire.mp3","img/artists/puppet.png","thefiresingle")
+
 AddSong("Razihel","Children Of The Night","Bounce","Razihel_ChildrenOfTheNight.mp3","img/artists/razihel.png","childrenofthenightsingle")
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
 AddSong("Razihel","Legends<br>(Zatox Remix)","Hard Dance","Razihel_LegendsZatoxRemix.mp3","img/artists/razihel.png","legendszatoxremixsingle")
@@ -192,6 +198,7 @@ AddSong("Tut Tut Child","Power Fracture","EDM","TutTutChild_PowerFracture.mp3","
 AddSong("Tut Tut Child","The Uppity Strut","Glitch Hop Or 110 BPM","TutTutChild_TheUppityStrut.mp3","img/artists/tuttutchild.png","theuppitystrutsingle")
 
 AddSong("Vicetone","Heartbeat<br>(feat. Collin McLoughlin)","Progressive House","Vicetone_Heartbeat.mp3","img/artists/vicetone.png","monstercat012aftermath")
+AddSong("Vicetone","Nevada<br>(feat. Cozi Zuehlsdorff)","Progressive House","Vicetone_Nevada.mp3","img/artists/vicetone.png","nevadasingle")
 
-AddSong("Varien & 7 Minutes Dead","Mirai Sekai (Continuous Mix)","EDM","VarienAnd7MinutesDead_MiraiSekaiContinuousMix.mp3","img/artists/varien.png","miraisekaiep")
+AddSong("Varien &<br>7 Minutes Dead","Mirai Sekai (Continuous Mix)","EDM","VarienAnd7MinutesDead_MiraiSekaiContinuousMix.mp3","img/artists/varien.png","miraisekaiep")
 AddSong("Varien","Valkyrie<br>(feat. Laura Brehm)","Drumstep","Varien_Valkyrie.mp3","img/artists/varien.png","valkyriesingle")
