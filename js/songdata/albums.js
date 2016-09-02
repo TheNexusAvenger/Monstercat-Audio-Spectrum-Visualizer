@@ -39,6 +39,8 @@ RegisterAlbum("thegirltheremixes","Hellberg - The Girl (feat. Cozi Zeuhlsdoff) (
 RegisterAlbum("newagedarkage","Karma Fields - New Age Dark Age",["Edge Of The World","Stickup (feat. Juliette Lewis)","For Me","Skyline","Fixed_","Greatness (feat. Talib Kweli)","Scandal (feat. C.C. Sheffield)","Build The Cities (feat. Kerli)","Skewed","Faint Echoes (feat. Monarchy)","A Bright But Distant Future","Build The Cities + (feat. Kerli)"])
 RegisterAlbum("buildthecitiesreconstructions","Karma Fields - Build The Cities (feat. Kerli) (Reconstructions)",["Build The Cities (feat. Kerli) (Empire Of Sound)","Build The Cities (feat. Kerli) (Grabbitz Remix)","Build The Cities (feat. Kerli) (Project 46 Remix)","Build The Cities (feat. Kerli) (Kastle Remix)","Build The Cities (feat. Kerli) (AC Slater Remix)","Build The Cities (feat. Kerli) (Rootkit Remix)","Build The Cities (feat. Kerli) (Redial Remix)"])
 
+RegisterAlbum("alonetheremixes","Marshmello - Alone (The Remixes)",["Alone (Slushii Remix)","Alone (Getter Remix)","Alone (DISKORD Remix)","Alone (Streex Remix)","Alone (MRVLZ Remix)","Alone (LUCA LUSH Remix)"])
+
 RegisterAlbum("monstercat5yearanniversary","Monstercat - Monstercat 5 Year Anniversary",["Matches (feat. Aaron Richards)","Lift You Up (feat. EMEL)","Blackout","Divided VIP","Imperfect Views","This Feeling","Tribal","Break The Silence","Crescendo (feat. MLYK)","Before We Fade"])
 
 RegisterAlbum("fminorfactoryep","Muzzy - F Minor Factory EP",["The Factory","Junction Seven","Play (feat. UK:ID)","Children Of Hell"])
