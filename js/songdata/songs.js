@@ -10,7 +10,7 @@ AddSong("Au5","Crossroad<br>(feat. Danyka Nadeau)","Trance","Au5_Crossroad.mp3",
 AddSong("Au5","Snowblind<br>(feat. Tasha Baxter)","Dubstep","Au5_Snowblind.mp3","img/artists/au5.png","snowblindsingle")
 
 AddSong("Astronaut","Apollo<br>(Radio Edit)","Electro","Astronaut_ApolloRadioEdit.mp3","img/artists/astronaut.png","apolloep")
-AddSong("Astronaut","Champions","House","Astronaut_Champions.mp3","img/artists/astronaut.png","championssingle")
+AddSong("Astronaut","Champions<br>(feat. Harry Brooks Jnr)","House","Astronaut_Champions.mp3","img/artists/astronaut.png","championssingle")
 AddSong("Astronaut","Feronia<br>(feat. Danyka Nadeau)","Electro","Astronaut_Feronia.mp3","img/artists/astronaut.png","feroniasingle")
 AddSong("Astronaut","Quantum","Electro","Astronaut_Quantum.mp3","img/artists/astronaut.png","quantumep")
 AddSong("Astronaut","Quantum<br>(Hellberg Remix)","Progressive House","Astronaut_QuantumHellbergRemix.mp3","img/artists/astronaut.png","destinationquantum")
@@ -59,6 +59,10 @@ AddSong("Hellberg","Saviors","Progressive House","Hellberg_Saviors.mp3","img/art
 AddSong("Hellberg","The Girl<br>(feat. Cozi Zeuhlsdoff)","Progressive House","Hellberg_TheGirl.mp3","img/artists/hellberg.png","thisismeep")
 AddSong("Hellberg","The Girl (feat. Cozi Zeuhlsdoff)<br>(Color Source Remix)","Future Bass","Hellberg_TheGirlColorSourceRemix.mp3","img/artists/hellberg.png","thegirltheremixes")
 
+AddSong("Hot Date! & Insan3Lik3","Clocks<br>(feat. Chrisson)","Electro","HotDateAndInsan3Lik3_Clocks.mp3","img/artists/hotdate.png","monstercat008anniversary")
+AddSong("Hot Date! & Chrisson","Overcome<br>(This Time)","Drum & Bass","HotDateAndChrisson_OvercomeThisTime.mp3","img/artists/hotdate.png","monstercat006embrace")
+AddSong("Hot Date! & Chrisson","To The Sun<br>(feat. Roufaida)","Drum & Bass","HotDateAndChrisson_ToTheSun.mp3","img/artists/hotdate.png","monstercat011revolution")
+
 AddSong("Tristam X Karma Fields","Build The Cities (Empire Of Sound)<br>(feat. Kerli)","Electro","TristamXKarmaFields_BuildTheCitiesEmpireOfSound.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
 AddSong("Karma Fields","Build The Cities<br>(feat. Kerli)","Electro","KarmaFields_BuildTheCities.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Project 46 Remix)","Progressive House","KarmaFields_BuildTheCitiesProject46Remix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
@@ -66,10 +70,18 @@ AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Rootkit Remix)","Futu
 AddSong("Karma Fields","Edge Of The World","Electro","KarmaFields_EdgeOfTheWorld.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/karmafields.png","newagedarkage")
 
+AddSong("Laszlo","A King's Life","Progressive House","Laszlo_AKingsLife.mp3","img/artists/laszlo.png","closerep")
+AddSong("Laszlo","Airglow","Future House","Laszlo_Airglow.mp3","img/artists/laszlo.png","airglowsingle")
+AddSong("Laszlo","Closer","EDM","Laszlo_Closer.mp3","img/artists/laszlo.png","closerep")
+AddSong("Laszlo","Don't Look Down","Drum & Bass","Laszlo_DontLookDown.mp3","img/artists/laszlo.png","dontlookdownsingle")
+AddSong("Laszlo","Fall To Light","Progressive House","Laszlo_FallToLight.mp3","img/artists/laszlo.png","falltolightsingle")
+AddSong("Laszlo","Here We Are","Drum & Bass","Laszlo_HereWeAre.mp3","img/artists/laszlo.png","herewearesingle")
 AddSong("Laszlo","Home","Progressive House","Laszlo_Home.mp3","img/artists/laszlo.png","homesingle")
 AddSong("Laszlo","Interstellar","Progressive House","Laszlo_Interstellar.mp3","img/artists/laszlo.png","interstellarsingle")
+AddSong("Laszlo","Sphere","Progressive House","Laszlo_Sphere.mp3","img/artists/laszlo.png","spheresingle")
 AddSong("Laszlo","Supernova","Electro","Laszlo_Supernova.mp3","img/artists/laszlo.png","supernovasingle")
 AddSong("Laszlo","Tribal","House","Laszlo_Tribal.mp3","img/artists/laszlo.png","monstercat5yearanniversary")
+AddSong("Laszlo X WRLD","You & Me","Future Bass","LaszloXWRLD_YouAndMe.mp3","img/artists/laszlo.png","youandmesingle")
 
 AddSong("Lets Be Friends","FTW","Electro","LetsBeFriends_FTW.mp3","img/artists/letsbefriends.png","ftwsingle")
 AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","LetsBeFriends_ManslaughterVipMix.mp3","img/artists/letsbefriends.png","monstercat014discovery")
@@ -163,6 +175,7 @@ AddSong("Rogue","Nightfall","Glitch Hop Or 110 BPM","Rogue_Nightfall.mp3","img/a
 AddSong("Rogue","Rattlesnake","Trap","Rogue_Rattlesnake.mp3","img/artists/rogue.png","rattlesnakesingle")
 AddSong("Rogue","Through The Dark","Electro","Rogue_ThroughTheDark.mp3","img/artists/rogue.png","earthep")
 
+AddSong("SCNDL","The Munsta","Bounce","SCNDL_TheMunsta.mp3","img/artists/scndl.png","themunstasingle")
 AddSong("SCNDL","The Munsta<br>(AlphavibeZ Remix)","Hard Dance","SCNDL_TheMunstaAlphavibeZRemix.mp3","img/artists/scndl.png","themunstatheremixesep")
 
 AddSong("Slips & Slurs","Divided","Trap","SlipsAndSlurs_Divided.mp3","img/artists/slipsandslurs.png","dividedsingle")
