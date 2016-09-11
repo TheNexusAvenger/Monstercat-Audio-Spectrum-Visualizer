@@ -88,6 +88,7 @@ AddSong("Lets Be Friends","Manslaughter<br/>(VIP Mix)","Glitch Hop Or 110 BPM","
 
 AddSong("Marshmello","Alone","Trap","Marshmello_Alone.mp3","img/artists/marshmello.png","alonesingle")
 AddSong("Marshmello","Alone<br>(MRVLZ Remix)","Future Bass","Marshmello_AloneMRVLZRemix.mp3","img/artists/marshmello.png","alonetheremixes")
+AddSong("Marshmello","Alone<br>(Streex Remix)","Future Bass","Marshmello_AloneStreexRemix.mp3","img/artists/marshmello.png","alonetheremixes")
 
 AddSong("Mitchell Claxton","Koh Samui","Trance","MitchellClaxton_KohSamui.mp3","img/artists/mitchellclaxton.png","monstercat009reunion")
 AddSong("Mitchell Claxton","Wuxia","Trance","MitchellClaxton_Wuxia.mp3","img/artists/mitchellclaxton.png","wuxiasingle")
