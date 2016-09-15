@@ -74,23 +74,19 @@ function TransformToVisualBins(Array) {
 }
 
 function AverageTransform(Array) {
-    var Values = []
     var Length = Array.length
 
-    /*
+
+    /*var Values = []
     for (var i = 0; i < Length; i++) {
         var Value = 0
         if (i == 0) {
             Value = Array[i];
-        } else if (i == Length - 1) {
-            Value = (Array[i - 1] + Array[i]) / 2
         } else {
             var PrevValue = Array[i - 1]
             var CurValue = Array[i]
-            var NextValue = Array[i + 1]
 
-            Value = (CurValue + NextValue + PrevValue)/3
-
+            Value = (CurValue + PrevValue)/2
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
@@ -99,24 +95,27 @@ function AverageTransform(Array) {
 
     return Values*/
 
-    var Values = []
-    for (var i = 0; i < Length; i++) {
-        var Value = 0
-        if (i == 0) {
-            Value = Array[i];
-        } else {
-            var PrevValue = Array[i - 1]
-            var CurValue = Array[i]
-
-            Value = (CurValue + PrevValue)/2//(CurValue + NextValue + PrevValue)/3
-
-        }
-        Value = Math.min(Value + 1, spectrumHeight)
-
-        Values[i] = Value;
+    var SamplePoints = []
+    for (var i = 0; i < Length; i = i + 2) {
+      SamplePoints[SamplePoints.length] = i //+ 1
     }
 
-    return Values
+    function Interpolate(S,E,A) {
+      return S + (E-S)*A
+    }
+
+    for (var i = 0; i < SamplePoints.length; i++) {
+      var CurSamplePoint = SamplePoints[i]
+      var NextSamplePoint = SamplePoints[i + 1]
+      if (NextSamplePoint) {
+        var Dif = NextSamplePoint - CurSamplePoint
+        for (var j = 1; j < Dif; j++) {
+          Array[CurSamplePoint + j] = Interpolate(Array[CurSamplePoint],Array[NextSamplePoint],j/Dif)
+        }
+      }
+    }
+
+    return Array
 }
 
 function tailTransform(array) {
