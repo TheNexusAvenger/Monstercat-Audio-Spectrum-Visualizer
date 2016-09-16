@@ -4,23 +4,18 @@
 
 var barWidth = (SpectrumBarCount + Bar1080pSeperation) / SpectrumBarCount - Bar1080pSeperation;
 var spectrumDimensionScalar = 4.5
-var headMargin = 7
-var tailMargin = 0
-var minMarginWeight = 0.7
-var marginDecay = 1.6
 var spectrumMaxExponent = 5
 var spectrumMinExponent = 3
 var spectrumExponentScale = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.75
+var SpectrumLogScale = 2.6
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
 spectrumSpacing = 7 * resRatio;
 spectrumWidth = (Bar1080pWidth + Bar1080pSeperation) * SpectrumBarCount - Bar1080pSeperation;
-var headMarginSlope = (1 - minMarginWeight) / Math.pow(headMargin, marginDecay);
 
 var spectrumHeight = 255
 
@@ -29,21 +24,16 @@ function SpectrumEase(Value) {
 }
 
 function GetVisualBins(Array) {
-  /*var NewArray = []
-  for (var i = 0; i < SpectrumBarCount; i++) {
-    var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
-    NewArray[i] = Array[Math.floor(Bin) + SpectrumStart] * (Bin % 1)
-            + Array[Math.floor(Bin + 1) + SpectrumStart] * (1 - (Bin % 1))
-  }
-  UpdateParticleAttributes(NewArray)
-
-  return NewArray */
-
   var SamplePoints = []
   var NewArray = []
+  var LastSpot = 0
   for (var i = 0; i < SpectrumBarCount; i++) {
-    var Bin = SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart;
-    SamplePoints[i] = Math.floor(Bin)
+    var Bin = Math.round(SpectrumEase(i / SpectrumBarCount) * (SpectrumEnd - SpectrumStart) + SpectrumStart)
+    if (Bin <= LastSpot) {
+      Bin = LastSpot + 1
+    }
+    LastSpot = Bin
+    SamplePoints[i] = Bin
   }
 
   for (var i = 0; i < SpectrumBarCount; i++) {
@@ -67,7 +57,6 @@ function GetVisualBins(Array) {
 
 function TransformToVisualBins(Array) {
   Array = AverageTransform(Array)
-  Array = tailTransform(Array)
   Array = exponentialTransform(Array)
 
   return Array;
@@ -116,20 +105,6 @@ function AverageTransform(Array) {
     }
 
     return Array
-}
-
-function tailTransform(array) {
-    var values = [];
-    for (var i = 0; i < SpectrumBarCount; i++) {
-        var value = array[i];
-        if (i < headMargin) {
-            value *= headMarginSlope * Math.pow(i + 1, marginDecay) + minMarginWeight;
-        } else if (SpectrumBarCount - i <= tailMargin) {
-            value *= tailMarginSlope * Math.pow(SpectrumBarCount - i, marginDecay) + minMarginWeight;
-        }
-        values[i] = value;
-    }
-    return values;
 }
 
 function exponentialTransform(array) {
