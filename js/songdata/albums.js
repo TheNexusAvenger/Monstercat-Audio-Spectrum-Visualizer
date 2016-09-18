@@ -59,5 +59,7 @@ RegisterAlbum("theuncagedremixes","Pegboard Nerds - The Uncaged Remixes",["Here 
 RegisterAlbum("dreamsep","Rogue - Dream EP",["Dreams (feat. Laura Brehm)","Air","Moments (feat. Meg Dean)","Escape"])
 RegisterAlbum("earthep","Rogue - Earth EP",["From The Dust","Cataclysm (feat. Meg Dean)","Perfect Views","Through The Dark"])
 
+RegisterAlbum("monumentep","Stonebank - Monument EP",["Lost Without You","Ready","Finally","Another Day (feat. EMEL)","Chokehold (feat. Concept)"])
+
 RegisterAlbum("dancetoep","Tut Tut Child - Dance To It EP",["Dance To It","Dragon Pirates","Fat Cat Adventures"])
 RegisterAlbum("askyourfriendsfirstep","Tut Tut Child - Ask Your Friends First EP",["Hot Pursuit","Breathe (feat. Danyka Nadeau)","Plain Sight (feat. Rachel Hirons)","Birds On The Wire (feat. Augustus Ghost)"])
