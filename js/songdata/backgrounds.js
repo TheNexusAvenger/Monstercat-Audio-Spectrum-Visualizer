@@ -89,6 +89,7 @@ RegisterBackground("Tribal","Song",[["img/backgrounds/tribalbackground.png",1920
 RegisterBackground("Divided VIP","Song",[["img/backgrounds/dividedvipbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("Lift You Up (feat. EMEL)","Song",[["img/backgrounds/liftyouupbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+RegisterBackground("The Only One (feat. Ben Clark)","Song",[["img/backgrounds/theonlyonebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 RegisterBackground("Who's Got Your Love","Song",[["img/backgrounds/whosgotyourlovebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("Before We Fade","Song",[["img/backgrounds/beforewefadebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
