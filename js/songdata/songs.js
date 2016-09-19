@@ -198,6 +198,7 @@ AddSong("Stonebank","Be Alright<br>(feat. EMEL)","Hard Dance","Stonebank_BeAlrig
 AddSong("Stonebank","Chokehold<br>(feat. Concept)","Glitch Hop Or 110 BPM","Stonebank_Chokehold.mp3","img/artists/stonebank.png","monumentep")
 AddSong("Stonebank","Lift You Up<br>(feat. EMEL)","Trance","Stonebank_LiftYouUp.mp3","img/artists/stonebank.png","monstercat5yearanniversary")
 AddSong("Stonebank","Stronger<br>(feat. EMEL)","Hardcore","Stonebank_Stronger.mp3","img/artists/stonebank.png","strongersingle")
+AddSong("Stonebank","The Only One<br>(feat. Ben Clark)","Hardstyle","Stonebank_TheOnlyOne.mp3","img/artists/stonebank.png","theonlyonesingle")
 AddSong("Stonebank","Who's Got Your Love","Happy Hardcore","Stonebank_WhosGotYourLove.mp3","img/artists/stonebank.png","whosgotyourlovesingle")
 
 AddSong("Summer Was Fun","Hold On<br>(feat. Q'aila)","Indie Dance","SummerWasFun_HoldOn.mp3","img/artists/summerwasfun.png","holdonsingle")
