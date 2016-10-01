@@ -38,7 +38,7 @@ function GetVisualBins(Array) {
 
   for (var i = 0; i < SpectrumBarCount; i++) {
     var CurSpot = SamplePoints[i]
-    var NextSpot = SamplePoints[i + 1]
+    var NextSpot = SamplePoints[i + 2]
     if (NextSpot == null) {
       NextSpot = SpectrumEnd
     }
