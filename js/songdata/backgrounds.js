@@ -64,11 +64,10 @@ function PureWhiteEnvironmentChanges() {
 RegisterBackground("Matches (feat. Aaron Richards)","Song",[["img/backgrounds/matchesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
+RegisterBackground("Karma Fields & MORTEN","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
 RegisterBackground("Tristam X Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
 
 RegisterBackground("Airglow","Song",[["img/backgrounds/airglowbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
-
-RegisterBackground("alonetheremixes","Album",[["img/backgrounds/alonetheremixesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("fminorfactoryep","Album",[["img/backgrounds/fminorfactoryepbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 RegisterBackground("Crescendo (feat. MYLK)","Song",[["img/backgrounds/crescendobackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
@@ -86,7 +85,13 @@ RegisterBackground("Imperfect Views","Song",[["img/backgrounds/imperfectviewsbac
 
 RegisterBackground("Tribal","Song",[["img/backgrounds/tribalbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
+RegisterBackground("alonetheremixes","Album",[["img/backgrounds/alonetheremixesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+
 RegisterBackground("Divided VIP","Song",[["img/backgrounds/dividedvipbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+
+RegisterBackground("Halo (feat. Helen Tess)","Song",[["img/backgrounds/halobackground.png",1920,1080,"rgba(0,0,0,0.3)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+
+RegisterBackground("Deep In The Night","Song",[["img/backgrounds/deepinthenightbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("Lift You Up (feat. EMEL)","Song",[["img/backgrounds/liftyouupbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 RegisterBackground("The Only One (feat. Ben Clark)","Song",[["img/backgrounds/theonlyonebackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
