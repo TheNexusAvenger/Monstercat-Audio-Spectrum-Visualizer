@@ -69,6 +69,7 @@ AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Project 46 Remix)","P
 AddSong("Karma Fields","Build The Cities (feat. Kerli)<br>(Rootkit Remix)","Future House","KarmaFields_BuildTheCitiesRootkitRemix.mp3","img/artists/karmafields.png","buildthecitiesreconstructions")
 AddSong("Karma Fields","Edge Of The World","Electro","KarmaFields_EdgeOfTheWorld.mp3","img/artists/karmafields.png","newagedarkage")
 AddSong("Karma Fields","For Me","Electro","KarmaFields_ForMe.mp3","img/artists/karmafields.png","newagedarkage")
+AddSong("Karma Fields & MORTEN","Stickup (feat. Juliette Lewis)<br>(Modestep Remix)","Drumstep","KarmaFieldsAndMORTEN_StickupModestepRemix.mp3","img/artists/karmafields.png","stickupsingle")
 
 AddSong("Laszlo","A King's Life","Progressive House","Laszlo_AKingsLife.mp3","img/artists/laszlo.png","closerep")
 AddSong("Laszlo","Airglow","Future House","Laszlo_Airglow.mp3","img/artists/laszlo.png","airglowsingle")
@@ -98,7 +99,7 @@ AddSong("Muzzy","Calling Out<br>(feat. KG & Skyelle)","Drum & Bass","Muzzy_Calli
 AddSong("Muzzy","Children Of Hell","Drum & Bass","Muzzy_ChildrenOfHell.mp3","img/artists/muzzy.png","fminorfactoryep")
 AddSong("Muzzy","Crescendo<br>(feat. MYLK)","Drum & Bass","Muzzy_Crescendo.mp3","img/artists/muzzy.png","monstercat5yearanniversary")
 AddSong("Muzzy","Feeling Stronger (feat. Charlotte Colley)<br>(High Maintenance Remix)","Drum & Bass","Muzzy_FeelingStrongerHighMaintenanceRemix.mp3","img/artists/muzzy.png","getcrazyfeelingstrongertheremixes")
-AddSong("Muzzy","Insignia","EDM","Muzzy_Insignia.mp3","img/artists/muzzy.png","insigniasingle")
+AddSong("Muzzy","Insignia","Trap","Muzzy_Insignia.mp3","img/artists/muzzy.png","insigniasingle")
 AddSong("Muzzy","Junction Seven","Drumstep","Muzzy_JunctionSeven.mp3","img/artists/muzzy.png","fminorfactoryep")
 AddSong("Muzzy","Letz Rock","Drum & Bass","Muzzy_LetzRock.mp3","img/artists/muzzy.png","letzrockep")
 AddSong("Muzzy & Roniit","Pegasus","Drum & Bass","MuzzyAndRoniit_Pegasus.mp3","img/artists/muzzy.png","letzrockep")
@@ -148,6 +149,7 @@ AddSong("Pegboard Nerds<br>& Tristam","Razor Sharp","Glitch Hop Or 110 BPM","Peg
 AddSong("Pegboard Nerds & Tristam","Razor Sharp VIP<br>(Vocal Mix)","Glitch Hop Or 110 BPM","PegboardNerdsAndTristam_RazorSharpVIPVocalMix.mp3","img/artists/pegboardnerds.png","razorsharpvocalmixsingle")
 AddSong("Pegboard Nerds","Revenge Of The Nerds<br>(VIP Mix)","Dubstep","PegboardNerds_RevengeOfTheNerdsVIPMix.mp3","img/artists/pegboardnerds.png","thelosttracksep")
 AddSong("Pegborad Nerds","Self Destruct","Dubstep","PegboardNerds_SelfDestruct.mp3","img/artists/pegboardnerds.png","monstercat010conquest")
+AddSong("Pegboard Nerds <br>& NGHTMRE","Superstar","Dubstep","PegboardNerdsAndNGHTMRE_Superstar.mp3","img/artists/pegboardnerds.png","superstarsingle")
 AddSong("Pegboard Nerds","Swamp Thing","EDM","PegboardNerds_SwampThing.mp3","img/artists/pegboardnerds.png","swampthingsingle")
 AddSong("Pegboard Nerds","Try This","Drumstep","PegboardNerds_TryThis.mp3","img/artists/pegboardnerds.png","trythissingle")
 AddSong("Pegboard Nerds","We Are One<br>(Droptek Remix)","Electro","PegboardNerds_WeAreOneDroptekRemix.mp3","img/artists/pegboardnerds.png","monstercat012aftermath")
@@ -158,6 +160,7 @@ AddSong("Puppet &<br>The Eden Project","The Fire","Electro","PuppetAndTheEdenPro
 
 AddSong("Razihel","Children Of The Night","Bounce","Razihel_ChildrenOfTheNight.mp3","img/artists/razihel.png","childrenofthenightsingle")
 AddSong("Razihel","Legends","Trap","Razihel_Legends.mp3","img/artists/razihel.png","legendssingle")
+AddSong("Razihel","Legends<br>(Hyper Potions Remix)","Future Bass","Razihel_LegendsHyperPotionsRemix.mp3","img/artists/razihel.png","legendshyperpotionsremixsingle")
 AddSong("Razihel","Legends<br>(Zatox Remix)","Hard Dance","Razihel_LegendsZatoxRemix.mp3","img/artists/razihel.png","legendszatoxremixsingle")
 
 AddSong("Richard Caddock, WRLD, Nitro Fun,<br> Slips & Slurs & Subtact","Break The Silence","Future Bass","RichardCaddockWRLDNitroFunSlipsAndSlursSubtact_BreakTheSilence.mp3","img/artists/richardcaddock.png","monstercat5yearanniversary")
@@ -178,6 +181,10 @@ AddSong("Rogue","Through The Dark","Electro","Rogue_ThroughTheDark.mp3","img/art
 
 AddSong("SCNDL","The Munsta","Bounce","SCNDL_TheMunsta.mp3","img/artists/scndl.png","themunstasingle")
 AddSong("SCNDL","The Munsta<br>(AlphavibeZ Remix)","Hard Dance","SCNDL_TheMunstaAlphavibeZRemix.mp3","img/artists/scndl.png","themunstatheremixesep")
+
+AddSong("Snails <br>& Pegboard Nerds","Deep In The Night","Dubstep","SnailsAndPegboardNerds_DeepInTheNight.mp3","img/artists/snails.png","deepinthenightsingle")
+
+AddSong("SMLE","Halo<br>(feat. Helen Tess)","Future Bass","SMLE_Halo.mp3","img/artists/smle.png","halosingle")
 
 AddSong("Slips & Slurs","Divided","Trap","SlipsAndSlurs_Divided.mp3","img/artists/slipsandslurs.png","dividedsingle")
 AddSong("Slips & Slurs","Divided VIP","Trap","SlipsAndSlurs_DividedVIP.mp3","img/artists/slipsandslurs.png","monstercat5yearanniversary")
