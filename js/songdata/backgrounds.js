@@ -61,6 +61,8 @@ function PureWhiteEnvironmentChanges() {
   ChangedEnvironments[0] =  "MonstercatLogo"
 }
 
+RegisterBackground("loveandhateep","Album",[["img/backgrounds/loveandhateepbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
+
 RegisterBackground("Matches (feat. Aaron Richards)","Song",[["img/backgrounds/matchesbackground.png",1920,1080,"rgba(0,0,0,0)"]],"#FFFFFF",PureWhiteEnvironmentChanges)
 
 RegisterBackground("Karma Fields","Artist",[["img/blankpixel.png",3840,2160,"#E8E8E8"]],"#000000",KarmaFieldsEnvironmentChanges)
