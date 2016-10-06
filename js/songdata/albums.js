@@ -21,6 +21,8 @@ function RegisterAlbum(ReferenceName,Name,Songs) {
   Albums[ReferenceName] = [Name,AlbumSongs]
 }
 
+RegisterAlbum("loveandhateep","Aero Chord - Love & Hate EP",["The 90S","Wanchu Back","Kid's Play","Gone","Until The End (feat. Q'AILA)"])
+
 RegisterAlbum("apolloep","Astronaut - Apollo EP",["Apollo (Electro Mix)","Apollo (Radio Edit)","Pinball","Space Jam","13","Apollo (Dodge & Fuski Remix)","Apollo (Instrumental Electro Mix)","Apollo (Instrumental Radio Edit)"])
 RegisterAlbum("quantumep","Astronaut - Quantum EP",["Quantum","Rain"])
 RegisterAlbum("destinationquantum","Astronaut - Destination: Quantum",["Quantum (Virtual Riot Remix)","Quantum (Hellberg Remix)","Quantum (Spag Heddy Remix)","Quantum (Dilemn Remix)","Quantum (Cutline Remix)"])
