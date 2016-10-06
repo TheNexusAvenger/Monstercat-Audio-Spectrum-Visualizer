@@ -1,4 +1,3 @@
-//The averaging function removes spikes. Needs to be replaced with something.
 //Heavily modified from https://github.com/caseif/vis.js/blob/gh-pages/js/analysis/spectrum_algorithms.js
 
 
@@ -10,7 +9,7 @@ var spectrumExponentScale = 2
 
 var SpectrumStart = 4
 var SpectrumEnd = 1200
-var SpectrumLogScale = 2.6
+var SpectrumLogScale = 2.75
 
 var resRatio = (window.innerWidth/window.innerHeight)
 var spectrumWidth = 1568 * resRatio;
@@ -38,7 +37,7 @@ function GetVisualBins(Array) {
 
   for (var i = 0; i < SpectrumBarCount; i++) {
     var CurSpot = SamplePoints[i]
-    var NextSpot = SamplePoints[i + 2]
+    var NextSpot = SamplePoints[i + 1]
     if (NextSpot == null) {
       NextSpot = SpectrumEnd
     }
@@ -66,27 +65,28 @@ function AverageTransform(Array) {
     var Length = Array.length
 
 
-    /*var Values = []
+    var Values = []
     for (var i = 0; i < Length; i++) {
         var Value = 0
         if (i == 0) {
             Value = Array[i];
         } else {
             var PrevValue = Array[i - 1]
+            var NextValue = Array[i + 1]
             var CurValue = Array[i]
 
-            Value = (CurValue + PrevValue)/2
+            Value = ((CurValue * 4) + ((NextValue + PrevValue)/2 * 2))/6
         }
         Value = Math.min(Value + 1, spectrumHeight)
 
         Values[i] = Value;
     }
 
-    return Values*/
-
+    return Values
+/*
     var SamplePoints = []
     for (var i = 0; i < Length; i = i + 2) {
-      SamplePoints[SamplePoints.length] = i //+ 1
+      SamplePoints[SamplePoints.length] = i
     }
 
     function Interpolate(S,E,A) {
@@ -104,7 +104,7 @@ function AverageTransform(Array) {
       }
     }
 
-    return Array
+    return Array*/
 }
 
 function exponentialTransform(array) {
