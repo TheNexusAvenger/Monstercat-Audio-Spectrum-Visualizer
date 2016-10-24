@@ -2,6 +2,7 @@
 //    "Album Name" should be the same file in img/albums/ to display the image
 
 AddSong("Aero Chord","4U","Moombahton","AeroChord_4U.mp3","img/artists/aerochord.png","4usingle")
+AddSong("Rhodz","4U","Kids","ayylmao.mp3","img/artists/aerochord.png","4usingle")
 AddSong("Aero Chord","Boundless","Trap","AeroChord_Boundless.mp3","img/artists/aerochord.png","boundlesssingle")
 AddSong("Aero Chord","Surface","Trap","AeroChord_Surface.mp3","img/artists/aerochord.png","surfacesingle")
 AddSong("Aero Chord","The 90S","Future Bass","AeroChord_The90S.mp3","img/artists/aerochord.png","loveandhateep")
