@@ -1,5 +1,5 @@
 # Monstercat-Audio-Spectrum-Visualizer
-Also: More songs will be added, just need to get them
+<b>Attention: Due to the fact this is approaching 1 GB, no more music will be added. I may look into getting a domain but it is unlikely.</b>
 
 Viewing: 
 (Development) https://rawgit.com/TheNexusAvenger/Monstercat-Audio-Spectrum-Visualizer/master/index.html
